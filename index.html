@@ -13,8 +13,11 @@
 
 <body>
 
-    <div class="banner">
-        <img src="assets/bannerUGM.jpg" alt="O-COCOSDA 2025">
+    <div class="banner-slideshow">
+        <img class="slide" src="assets/bannerUGM.jpg" style="display: block;">
+        <img class="slide" src="assets/banner1.jpg" style="display: none;">
+        <img class="slide" src="assets/banner2.jpg" style="display: none;">
+     alt="O-COCOSDA 2025">
         <div class="top-left">
             <span class="title2">O-COCOSDA</span><span class="title1">2025</span> <span class="year"></span>
         </div>
@@ -106,6 +109,16 @@ We are pleased to announce that the conference will be held in person. To gain t
     <footer>
         &copy; Conference Organizers
     </footer>
+
+        <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => {
+            slides[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].style.display = 'block';
+        }, 3000); // Ganti setiap 3 detik
+    </script>
 
 </body>
 </html>
