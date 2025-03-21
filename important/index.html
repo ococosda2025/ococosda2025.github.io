@@ -11,43 +11,30 @@
     <title>The 28th International Conference of the Oriental COCOSDA</title>
 </head>
 
-<body>
+<body style="margin-top: 70px;">
 
-    <div class="banner">
-        <img src="assets/bannerUGM.jpg" alt="O-COCOSDA 2025">
-        <div class="top-left">
-            <span class="title2">O-COCOSDA</span><span class="title1">2025</span> <span class="year"></span>
-        </div>
-        <div class="bottom-right">
-            November 11-13, 2025 <br> Royal Ambarrukmo Yogyakarta, Indonesia        </div>
+<!-- Navigation Bar using Flexbox -->
+<div class="navigation">
+    <a href="." title="Conference Home Page">Home </a>
+    <a href="registration" title="Register for the Conference">Registration</a>
+    <a href="program" title="Conference Program">Program</a>
+    <a href="directions" title="Directions to the Conference">Directions</a>
+    <a href="flyer" title="Conference Flyer">Flyer</a>
+    <a href="important" title="Important Dates">Important Dates</a>
+</div>
+
+<div class="banner">
+    <div class="image-container">
+        <img alt="O-COCOSDA 2025" height="700" id="slideshow" src="assets/borobudur-1.jpg" width="1000"/>
+        <div class="caption">The Borobudur Temple</div>
     </div>
-
-    <table class="navigation">
-        <tr>
-            <td class="navigation">
-                <a class="current" title="Conference Home Page" href=".">Home </a>
-            </td>
-            <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
-            </td>
-            <td class="navigation">
-                <a title="Directions to the Conference" href="directions">Directions</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
-            </td>
-        </tr>
-        <tr></tr>
-                <tr>
-            <td align="jusrify" colspan="5" class="navigation">
-                <a title="Important Dates" href="important">Important Dates</a> 
-            </td>
-
-        </tr>
-    </table>
+    <div class="top-left">
+        <span class="title1">O-COCOSDA</span> <span class="title2">2025</span>
+    </div>
+    <div class="bottom-right">
+        November 11~13, 2025 <br/> Royal Ambarukmo Hotel, Yogyakarta, Indonesia
+    </div>
+</div>
 
     <h2>Important dates:</h2>
     <!--
@@ -75,6 +62,27 @@
     <footer>
         &copy; Conference Organizers
     </footer>
+
+    <script>
+    const images = [
+        'assets/borobudur-1.jpg',
+        'assets/borobudur-2.jpg',
+        'assets/keraton yogya-1.jpg',
+        'assets/keraton yogya-2.jpg',
+        'assets/tugu-Jogja-1.jpg'
+    ];
+
+    let currentIndex = 0;
+    const imgElement = document.getElementById('slideshow');
+    const captionElement = document.querySelector('.caption');
+
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        imgElement.src = images[currentIndex];
+        captionElement.textContent = images[currentIndex].includes('borobudur') ? 'The Borobudur Temple' :
+                                    images[currentIndex].includes('keraton') ? 'The Yogyakarta Sultanate Palace' : 'The Yogyakarta Monument';
+    }, 3000); // Ganti gambar setiap 3 detik
+    </script>
 
 </body>
 </html>
