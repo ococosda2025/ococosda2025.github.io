@@ -3,24 +3,24 @@
 
 <head>
     <base href="..">
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="O-COCOSDA 2025">
-    <meta name="resource-type" content="document">
-    <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>The 28th International Conference of the Oriental COCOSDA</title>
+<link href="assets/main.css" media="all" rel="stylesheet" type="text/css"/>
+<meta content="O-COCOSDA 2025" name="description"/>
+<meta content="document" name="resource-type"/>
+<meta content="global" name="distribution"/>
+<meta content="Conference" name="KeyWords"/>
+<title>The 28th International Conference of the Oriental COCOSDA</title>
 </head>
-
 <body style="margin-top: 70px;">
 
 <!-- Navigation Bar using Flexbox -->
 <div class="navigation">
     <a href="." title="Conference Home Page">Home </a>
+    <a href="cfp" title="Call for Papers">Call for Papers</a>
     <a href="registration" title="Register for the Conference">Registration</a>
     <a href="program" title="Conference Program">Program</a>
     <a href="directions" title="Directions to the Conference">Directions</a>
-    <a href="flyer" title="Conference Flyer">Flyer</a>
-    <a href="important" title="Important Dates">Important Dates</a>
+    <!--<a href="flyer" title="Conference Flyer">Flyer</a>-->
+    <!--<a href="important" title="Important Dates">Important Dates</a>-->
 </div>
 
 <div class="banner">
@@ -32,9 +32,11 @@
         <span class="title1">O-COCOSDA</span> <span class="title2">2025</span>
     </div>
     <div class="bottom-right">
-        November 11~13, 2025 <br/> Royal Ambarukmo Hotel, Yogyakarta, Indonesia
+        November 11~13, 2025 <br/> Royal Ambarrukmo Hotel, Yogyakarta, Indonesia
     </div>
 </div>
+    <b>This website is still under construction.
+      Please come back soon for complete information on O-COCOSDA 2025.</b>
 
     <h2>Directions</h2>
     <p>
@@ -47,16 +49,18 @@
     <img class="center" src="assets/kitten4.jpg" alt="This is just a kitten right now" id="kitten">
     -->
     
+
     <footer>
-        &copy; Conference Organizers
+        &copy; O-COCOADA 2025, Royal Ambarrukmo Hotel, Yogyakarta, Indonesia
     </footer>
 
-    <script>
+<script>
     const images = [
         'assets/borobudur-1.jpg',
         'assets/borobudur-2.jpg',
         'assets/keraton yogya-1.jpg',
         'assets/keraton yogya-2.jpg',
+        'assets/serimpi.jpg',
         'assets/tugu-Jogja-1.jpg'
     ];
 
@@ -68,9 +72,9 @@
         currentIndex = (currentIndex + 1) % images.length;
         imgElement.src = images[currentIndex];
         captionElement.textContent = images[currentIndex].includes('borobudur') ? 'The Borobudur Temple' :
+                                    images[currentIndex].includes('serimpi') ? 'The Serimpi Dance' :
                                     images[currentIndex].includes('keraton') ? 'The Yogyakarta Sultanate Palace' : 'The Yogyakarta Monument';
     }, 3000); // Ganti gambar setiap 3 detik
-    </script>
-
+</script>
 </body>
 </html>
