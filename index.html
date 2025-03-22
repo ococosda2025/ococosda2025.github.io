@@ -16,11 +16,12 @@
 <!-- Navigation Bar using Flexbox -->
 <div class="navigation">
     <a href="." title="Conference Home Page">Home </a>
+    <a href="cfp" title="Call for Papers">Call for Papers</a>
     <a href="registration" title="Register for the Conference">Registration</a>
     <a href="program" title="Conference Program">Program</a>
     <a href="directions" title="Directions to the Conference">Directions</a>
-    <a href="flyer" title="Conference Flyer">Flyer</a>
-    <a href="important" title="Important Dates">Important Dates</a>
+    <!--<a href="flyer" title="Conference Flyer">Flyer</a>-->
+    <!--<a href="important" title="Important Dates">Important Dates</a>-->
 </div>
 
 <div class="banner">
@@ -32,33 +33,32 @@
         <span class="title1">O-COCOSDA</span> <span class="title2">2025</span>
     </div>
     <div class="bottom-right">
-        November 11~13, 2025 <br/> Royal Ambarukmo Hotel, Yogyakarta, Indonesia
+        November 11~13, 2025 <br/> Royal Ambarrukmo Hotel, Yogyakarta, Indonesia
     </div>
 </div>
+    <b>This website is still under construction.
+      Please come back soon for complete information on O-COCOSDA 2025.</b>
 
 <h2>Welcome to O-COCOSDA 2025!</h2>
 <p>
-    O-COCOSDA 2025: The 28th International Conference of Oriental COCOSDA  
-    The 28th Oriental COCOSDA International Conference will be held from November 11-13, 2025, in Yogyakarta, Indonesia.
-    Hosted by Royal Ambarrukmo Yogyakarta, the conference will take place in person.
-    We strongly encourage attendees to join physically to fully engage with and experience the event.
+The 28th International Conference of Oriental COCOSDA will be held in person from November 11-13, 2025, in Yogyakarta, Indonesia, and will be hosted by Royal Ambarrukmo Yogyakarta.<br>
+We strongly encourage attendees to join physically to fully engage with and experience the event.
 </p>
 
     <p>
-        <h4>About Oriental COCOSDA</h4>
+        <h2>About Oriental COCOSDA</h2>
     </p>
     Oriental COCOSDA (O-COCOSDA) is the Oriental branch of COCOSDA, which stands for the International Committee for the Coordination and Standardisation of Speech Databases and Assessment Techniques. Established in 1997, its primary goal is to foster idea exchange, share insights, and discuss regional matters related to the creation, use, and distribution of spoken language corpora for Oriental languages. Additionally, O-COCOSDA focuses on assessing speech recognition and synthesis systems while promoting speech research in Oriental languages.
     </p>
 
     <p>
-        <h4>About the Conference</h4>
+        <h2>About the Conference</h2>
     </p>  
     The annual Oriental COCOSDA International Conference is the flagship event of O-COCOSDA.  
     The first preparatory meeting took place in Hong Kong in 1997, and since then, 27 workshops have been hosted in various countries, including Japan, Taiwan, China, Korea, Thailand, Singapore, India, Indonesia, Malaysia, Vietnam, Nepal, Macau, Myanmar, and the Philippines. This year, the 28th edition of the conference returns to Indonesia, specifically Yogyakarta, with Gadjah Mada University as the host.
 
-    <p>
-        <h4>Invitation to Participate</h4>
-    </p>
+    <p align="right">
+        <h2>Invitation to Participate</h2>
     The O-COCOSDA 2025 organizing committee invites researchers, practitioners, industry partners, and sponsors to take part in this conference. The event serves as a platform for international collaboration in the development of speech corpora and the coordination of evaluation methods for speech input/output systems in both academic and industrial settings. Following 26 successful editions, this conference continues to explore topics related to database development and assessment methodologies.
 
     <p>
@@ -66,17 +66,19 @@
     </p>
 
     <p>
-        <h4>In-Person Attendance and Alternative Arrangements</h4>
+        <h2>In-Person Attendance and Alternative Arrangements</h2>
     </p>
     We are pleased to announce that the conference will be held in person. To gain the most from the event, we highly encourage physical attendance. However, if you face specific challenges, such as visa application difficulties, please reach out to the organizers to discuss possible alternative arrangements.
 
+    <!--
     <h2>Organizers</h2>
+    -->
     <p>
         This website is still under construction. Please come back soon for complete information on O-COCOSDA 2025.
     </p>
 
     <footer>
-        &copy; Conference Organizers
+        &copy; O-COCOADA 2025, Royal Ambarrukmo Hotel, Yogyakarta, Indonesia
     </footer>
 
 <script>
@@ -85,6 +87,7 @@
         'assets/borobudur-2.jpg',
         'assets/keraton yogya-1.jpg',
         'assets/keraton yogya-2.jpg',
+        'assets/serimpi.jpg',
         'assets/tugu-Jogja-1.jpg'
     ];
 
@@ -96,8 +99,29 @@
         currentIndex = (currentIndex + 1) % images.length;
         imgElement.src = images[currentIndex];
         captionElement.textContent = images[currentIndex].includes('borobudur') ? 'The Borobudur Temple' :
+                                    images[currentIndex].includes('serimpi') ? 'The Serimpi Dance' :
                                     images[currentIndex].includes('keraton') ? 'The Yogyakarta Sultanate Palace' : 'The Yogyakarta Monument';
     }, 3000); // Ganti gambar setiap 3 detik
+</script>
+<script>
+  const correctPassword = "panitia2025"; // Ganti dengan password kamu
+  const storageKey = "ococosda2025_auth";
+
+  function checkAuth() {
+    // Kalau sudah login sebelumnya, langsung lanjut
+    if (localStorage.getItem(storageKey) === "granted") return;
+
+    // Kalau belum, minta password
+    const userPassword = prompt("Masukkan password untuk mengakses situs ini:");
+
+    if (userPassword === correctPassword) {
+      localStorage.setItem(storageKey, "granted"); // Simpan status login
+    } else {
+      document.body.innerHTML = "<h1>Akses Ditolak</h1><p>Password salah. Hubungi panitia untuk akses.</p>";
+    }
+  }
+
+  checkAuth();
 </script>
 </body>
 </html>
