@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang='en'>
 
+<head>
+    <base href="..">
+<link href="assets/main.css" media="all" rel="stylesheet" type="text/css"/>
+<meta charset="UTF-8">
+<meta content="O-COCOSDA 2025" name="description"/>
+<meta content="document" name="resource-type"/>
+<meta content="global" name="distribution"/>
+<meta content="Conference" name="KeyWords"/>
+<title>The 28th International Conference of the Oriental COCOSDA</title>
+</head>
+<body style="margin-top: 70px;">
+
+<!-- Navigation Bar using Flexbox -->
+<div class="navigation">
+    <a href="." title="Conference Home Page" style="font-size:18px; font-weight:500; margin-right:15px;">Home </a>
+    <a href="cfp" title="Call for Papers" style="font-size:18px; font-weight:500; margin-right:15px;">Call for Papers</a>
+    <a href="program" title="Conference Program" style="font-size:18px; font-weight:500; margin-right:15px;">Program</a>
+    <a href="speakers" title="Speakers" style="font-size:18px; font-weight:500; margin-right:15px;">Speakers</a>
+    <a href="registration" title="Register for the Conference" style="font-size:18px; font-weight:500; margin-right:15px;">Registration</a>
+    <a href="venue" title="Venue" style="font-size:18px; font-weight:500; margin-right:15px;">Venue</a>
+    <a href="travel" title="Travel" style="font-size:18px; font-weight:500; margin-right:15px;">Travel</a>
+    <a href="contact" title="Contact" style="font-size:18px; font-weight:500; margin-right:15px;">Contact</a>
+
+    <!--<a href="flyer" title="Conference Flyer">Flyer</a>-->
+    <!--<a href="important" title="Important Dates">Important Dates</a>-->
+</div>
+
+<div class="banner">
+    <div class="image-container">
+        <img alt="O-COCOSDA 2025" height="700" id="slideshow" src="assets/borobudur-1.jpg" width="1000"/>
+        <div class="caption">The Borobudur Temple</div>
+    </div>
+    <div class="top-left">
+        <span class="title1">O-COCOSDA</span> <span class="title2">2025</span>
+    </div>
+    <div class="bottom-right">
+        November 11~13, 2025 <br/> Royal Ambarrukmo Hotel, Yogyakarta, Indonesia
+    </div>
+</div>
+<p>
+<div style="background-color: #ffcc00; color: #000; padding: 10px; text-align: center; font-weight: bold;">
+  🚧 This site is currently under construction. Content is being updated regularly. Stay tuned!
+</div>
+
+    <h2>Travel</h2>
+    <p>
+
+    <!--
+    <iframe class="directions" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d134998.56138929052!2d-121.98776790326531!3d37.869213445646146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808ff431db2f96d1%3A0x8b99d90a20aa67de!2sMt+Diablo!5e0!3m2!1sen!2sus!4v1561787340910!5m2!1sen!2sus"></iframe>
+
+    <img class="center" src="assets/kitten4.jpg" alt="This is just a kitten right now" id="kitten">
+    -->
+    
+
+<p>
+<footer style="background-color: #1a1a1a; color: #ffffff; padding: 20px 0; text-align: center; font-family: Arial, sans-serif;">
+  <div style="width: 100%; margin: 0 auto;">
+    <p style="margin: 0; font-size: 16px;">&copy; 2025 O-COCOSDA. All rights reserved.</p>
+    <p style="margin: 5px 0 0; font-size: 14px;">Oriental Chapter of the International Committee for the Co-ordination and Standardisation of Speech Databases and Assessment Techniques</p>
+  </div>
+</footer>
+
+<script>
+    const images = [
+        'assets/borobudur-1.jpg',
+        'assets/borobudur-2.jpg',
+        'assets/keraton yogya-1.jpg',
+        'assets/keraton yogya-2.jpg',
+        'assets/serimpi.jpg',
+        'assets/tugu-Jogja-1.jpg'
+    ];
+
+    let currentIndex = 0;
+    const imgElement = document.getElementById('slideshow');
+    const captionElement = document.querySelector('.caption');
+
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        imgElement.src = images[currentIndex];
+        captionElement.textContent = images[currentIndex].includes('borobudur') ? 'The Borobudur Temple' :
+                                    images[currentIndex].includes('serimpi') ? 'The Serimpi Dance' :
+                                    images[currentIndex].includes('keraton') ? 'The Yogyakarta Sultanate Palace' : 'The Yogyakarta Monument';
+    }, 3000); // Ganti gambar setiap 3 detik
+</script>
+</body>
+</html>
