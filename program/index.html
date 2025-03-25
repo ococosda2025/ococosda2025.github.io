@@ -23,15 +23,18 @@
     <a href="venue" title="Venue" style="font-size:18px; font-weight:500; margin-right:15px;">Venue</a>
     <a href="travel" title="Travel" style="font-size:18px; font-weight:500; margin-right:15px;">Travel</a>
     <a href="contact" title="Contact" style="font-size:18px; font-weight:500; margin-right:15px;">Contact</a>
-    <!--<a href="flyer" title="Conference Flyer">Flyer</a>-->
-    <!--<a href="important" title="Important Dates">Important Dates</a>-->
 </div>
 
 <div class="banner">
-    <div class="image-container">
-        <img alt="O-COCOSDA 2025" height="700" id="slideshow" src="assets/borobudur-1.jpg" width="1000"/>
-        <div class="caption">The Borobudur Temple</div>
-    </div>
+<div class="image-container banner-slideshow">
+    <img class="slideshow-image active" src="assets/borobudur-1.jpg" alt="Borobudur Temple" />
+    <img class="slideshow-image" src="assets/borobudur-2.jpg" alt="Borobudur Temple 2" />
+    <img class="slideshow-image" src="assets/keraton yogya-1.jpg" alt="Yogyakarta Palace" />
+    <img class="slideshow-image" src="assets/keraton yogya-2.jpg" alt="Yogyakarta Palace 2" />
+    <img class="slideshow-image" src="assets/serimpi.jpg" alt="Serimpi Dance" />
+    <img class="slideshow-image" src="assets/tugu-Jogja-1.jpg" alt="Tugu Monument" />
+    <div class="caption">The Borobudur Temple</div>
+</div>
     <div class="top-left">
         <span class="title1">O-COCOSDA</span> <span class="title2">2025</span>
     </div>
@@ -39,8 +42,8 @@
         November 11~13, 2025 <br/> Royal Ambarrukmo Hotel, Yogyakarta, Indonesia
     </div>
 </div>
-
 <p>
+
 <div style="background-color: #ffcc00; color: #000; padding: 10px; text-align: center; font-weight: bold;">
   🚧 This site is currently under construction. Content is being updated regularly. Stay tuned!
 </div>
@@ -333,27 +336,27 @@
 </footer>
 
 <script>
-    const images = [
-        'assets/borobudur-1.jpg',
-        'assets/borobudur-2.jpg',
-        'assets/keraton yogya-1.jpg',
-        'assets/keraton yogya-2.jpg',
-        'assets/serimpi.jpg',
-        'assets/tugu-Jogja-1.jpg'
-    ];
+  const slides = document.querySelectorAll('.slideshow-image');
+  const captionElement = document.querySelector('.caption');
+  const captions = [
+    'The Borobudur Temple',
+    'The Borobudur Temple',
+    'The Yogyakarta Sultanate Palace',
+    'The Yogyakarta Sultanate Palace',
+    'The Serimpi Dance',
+    'The Yogyakarta Monument'
+  ];
 
-    let currentIndex = 0;
-    const imgElement = document.getElementById('slideshow');
-    const captionElement = document.querySelector('.caption');
+  let current = 0;
 
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % images.length;
-        imgElement.src = images[currentIndex];
-        captionElement.textContent = images[currentIndex].includes('borobudur') ? 'The Borobudur Temple' :
-                                    images[currentIndex].includes('serimpi') ? 'The Serimpi Dance' :
-                                    images[currentIndex].includes('keraton') ? 'The Yogyakarta Sultanate Palace' : 'The Yogyakarta Monument';
-    }, 3000); // Ganti gambar setiap 3 detik
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+    captionElement.textContent = captions[current];
+  }, 3000);
 </script>
+
 </body>
 </html>
 
