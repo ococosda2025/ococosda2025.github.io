@@ -1,69 +1,114 @@
 <!DOCTYPE html>
-<html lang='en'>
 
+<html lang="en">
 <head>
-    <base href="..">
+<base href=".."/>
 <link href="assets/main.css" media="all" rel="stylesheet" type="text/css"/>
-<meta charset="UTF-8">
-<meta content="O-COCOSDA 2025" name="description"/>
+<meta charset="utf-8"/>
+<meta content="O-COCOSDA 2025" name="description">
 <meta content="document" name="resource-type"/>
 <meta content="global" name="distribution"/>
 <meta content="Conference" name="KeyWords"/>
 <title>The 28th International Conference of the Oriental COCOSDA</title>
-</head>
+</meta><style>
+.program-schedule {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.program-schedule th {
+  background-color: #b2132e;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+}
+.program-schedule td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+}
+.program-schedule td.time {
+  font-weight: bold;
+  width: 100px;
+  background-color: #f9f9f9;
+}
+.program-schedule tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+</style></head>
 <body style="margin-top: 70px;">
-
 <!-- Navigation Bar using Flexbox -->
 <div class="navigation">
-  <div class="dropdown">
-    <a href="#" class="dropbtn" title="Conference Home Page" style="font-size:18px; font-weight:500; margin-right:15px;">Home ▾</a>
-    <div class="dropdown-content">
-      <a href="index.html" style="font-size:18px; font-weight:500; margin-right:15px;">Home</a>
-      <a href="#organizers" style="font-size:18px; font-weight:500; margin-right:15px;">Organizers</a>
-    </div>
-  </div>
-  <a href="cfp" title="Call for Papers" style="font-size:18px; font-weight:500; margin-right:15px;">Call for Papers</a>
-  <a href="program" title="Conference Program" style="font-size:18px; font-weight:500; margin-right:15px;">Program</a>
-  <a href="speakers" title="Speakers" style="font-size:18px; font-weight:500; margin-right:15px;">Speakers</a>
-  <a href="registration" title="Register for the Conference" style="font-size:18px; font-weight:500; margin-right:15px;">Registration</a>
-  <a href="venue" title="Venue" style="font-size:18px; font-weight:500; margin-right:15px;">Venue</a>
-  <div class="dropdown">
-  <a href="#" class="dropbtn" title="Travel" style="font-size:18px; font-weight:500; margin-right:15px;">Travel ▾</a>
-  <div class="dropdown-content">
-    <a href="travel/index.html" style="font-size:18px; font-weight:500; margin-right:15px;">Travel</a>
-    <a href="travel/index.html#visa-info" style="font-size:18px; font-weight:500; margin-right:15px;">Visa</a>
-  </div>
+<div class="dropdown">
+<a class="dropbtn" href="#" style="font-size:18px; font-weight:500; margin-right:15px;" title="Conference Home Page">Home ▾</a>
+<div class="dropdown-content">
+<a href="index.html" style="font-size:18px; font-weight:500; margin-right:15px;">Home</a>
+<a href="#organizers" style="font-size:18px; font-weight:500; margin-right:15px;">Organizers</a>
 </div>
-  <a href="mailto:ococosda2025@gmail.com" title="Contact" style="font-size:18px; font-weight:500; margin-right:15px;">Contact</a>
 </div>
-
+<a href="cfp" style="font-size:18px; font-weight:500; margin-right:15px;" title="Call for Papers">Call for Papers</a>
+<a href="program" style="font-size:18px; font-weight:500; margin-right:15px;" title="Conference Program">Program</a>
+<a href="speakers" style="font-size:18px; font-weight:500; margin-right:15px;" title="Speakers">Speakers</a>
+<a href="registration" style="font-size:18px; font-weight:500; margin-right:15px;" title="Register for the Conference">Registration</a>
+<a href="venue" style="font-size:18px; font-weight:500; margin-right:15px;" title="Venue">Venue</a>
+<div class="dropdown">
+<a class="dropbtn" href="#" style="font-size:18px; font-weight:500; margin-right:15px;" title="Travel">Travel ▾</a>
+<div class="dropdown-content">
+<a href="travel/index.html" style="font-size:18px; font-weight:500; margin-right:15px;">Travel</a>
+<a href="travel/index.html#visa-info" style="font-size:18px; font-weight:500; margin-right:15px;">Visa</a>
+</div>
+</div>
+<a href="mailto:ococosda2025@gmail.com" style="font-size:18px; font-weight:500; margin-right:15px;" title="Contact">Contact</a>
+</div>
 <div class="banner">
 <div class="image-container banner-slideshow">
-    <img class="slideshow-image active" src="assets/borobudur-1.jpg" alt="Borobudur Temple" />
-    <img class="slideshow-image" src="assets/borobudur-2.jpg" alt="Borobudur Temple 2" />
-    <img class="slideshow-image" src="assets/keraton yogya-1.jpg" alt="Yogyakarta Palace" />
-    <img class="slideshow-image" src="assets/keraton yogya-2.jpg" alt="Yogyakarta Palace 2" />
-    <img class="slideshow-image" src="assets/serimpi.jpg" alt="Serimpi Dance" />
-    <img class="slideshow-image" src="assets/tugu-Jogja-1.jpg" alt="Tugu Monument" />
-    <div class="caption">The Borobudur Temple</div>
+<img alt="Borobudur Temple" class="slideshow-image active" src="assets/borobudur-1.jpg"/>
+<img alt="Borobudur Temple 2" class="slideshow-image" src="assets/borobudur-2.jpg"/>
+<img alt="Yogyakarta Palace" class="slideshow-image" src="assets/keraton yogya-1.jpg"/>
+<img alt="Yogyakarta Palace 2" class="slideshow-image" src="assets/keraton yogya-2.jpg"/>
+<img alt="Serimpi Dance" class="slideshow-image" src="assets/serimpi.jpg"/>
+<img alt="Tugu Monument" class="slideshow-image" src="assets/tugu-Jogja-1.jpg"/>
+<div class="caption">The Borobudur Temple</div>
 </div>
-    <div class="top-left">
-        <span class="title1">O-COCOSDA</span> <span class="title2">2025</span>
-    </div>
-    <div class="bottom-right">
+<div class="top-left">
+<span class="title1">O-COCOSDA</span> <span class="title2">2025</span>
+</div>
+<div class="bottom-right">
         November 11~13, 2025 <br/> Royal Ambarrukmo Hotel, Yogyakarta, Indonesia
     </div>
 </div>
 <p>
-
 <div style="background-color: #ffcc00; color: #000; padding: 10px; text-align: center; font-weight: bold;">
   🚧 This site is currently under construction. Content is being updated regularly. Stay tuned!
 </div>
-
-    <h2>Conference Program</h2>
-        This website is still under construction.
-        Please come back soon for complete information on O-COCOSDA 2025.
-    <!--
+<h2>Conference Program</h2>
+<table class="program-schedule">
+<tr><th colspan="2">🗓️ Day 1 – November 11, 2025</th></tr>
+<tr><td class="time">08:00</td><td>Registration &amp; Coffee</td></tr>
+<tr><td class="time">09:00</td><td>Opening Ceremony &amp; Welcome Speech</td></tr>
+<tr><td class="time">09:30</td><td>Keynote 1 – Dr. Jane Smith (University of Tokyo)</td></tr>
+<tr><td class="time">10:30</td><td>Coffee Break</td></tr>
+<tr><td class="time">11:00</td><td>Oral Session 1: Speech Recognition</td></tr>
+<tr><td class="time">12:30</td><td>Lunch Break</td></tr>
+<tr><td class="time">14:00</td><td>Invited Talk – Prof. Ahmed Al-Rashid (KSU)</td></tr>
+<tr><td class="time">15:00</td><td>Oral Session 2: Speech Synthesis</td></tr>
+<tr><td class="time">16:00</td><td>Poster Session</td></tr>
+<tr><td class="time">17:00</td><td>Welcome Reception</td></tr>
+<tr><th colspan="2">🗓️ Day 2 – November 12, 2025</th></tr>
+<tr><td class="time">09:00</td><td>Keynote 2 – Dr. Mei Lin (Tsinghua University)</td></tr>
+<tr><td class="time">10:00</td><td>Oral Session 3: Phonetics and Prosody</td></tr>
+<tr><td class="time">11:30</td><td>Break</td></tr>
+<tr><td class="time">12:00</td><td>Lunch Break</td></tr>
+<tr><td class="time">13:30</td><td>Panel Discussion: Future of Speech Technology</td></tr>
+<tr><td class="time">15:00</td><td>Oral Session 4: Language Resources</td></tr>
+<tr><td class="time">16:30</td><td>Poster Session</td></tr>
+<tr><td class="time">17:30</td><td>Cultural Night</td></tr>
+<tr><th colspan="2">🗓️ Day 3 – November 13, 2025</th></tr>
+<tr><td class="time">09:00</td><td>Keynote 3 – Prof. Maria Gonzalez (U. of Barcelona)</td></tr>
+<tr><td class="time">10:00</td><td>Oral Session 5: Multilingual Speech</td></tr>
+<tr><td class="time">11:30</td><td>Closing Ceremony &amp; Awards</td></tr>
+<tr><td class="time">12:30</td><td>Farewell Lunch</td></tr>
+</table>
+<!--
     <table>
         <tr>
             <td class="date" rowspan="2">
@@ -81,6 +126,7 @@
         </tr>
     </table>
 
+    <!--
     <table id="PUTSPEAKERNAMEHERE">
         <tr>
             <td class="date" rowspan="3">
@@ -176,177 +222,166 @@
         </tr>
         <tr>
             <td class="abstract">
-                <!-- Kept for Spacing  -->
-            </td>
-        </tr>
-    </table>
 
-    <table class="plenary">
-        <tr>
-            <td class="date" rowspan="3">
+
+
+<table class="plenary">
+<tr>
+<td class="date" rowspan="3">
                 11:00am
             </td>
-            <td class="title">
+<td class="title">
                 This is a Plenary Talk!
             </td>
-        </tr>
-        <tr>
-            <td class="speaker">
+</tr>
+<tr>
+<td class="speaker">
                 Plenary Speaker
             </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Here&rsquo;s the abstract for the plenary talk! Notice again that the formatting of this time-block is a bit different that the rest of of the talks.
+</tr>
+<tr>
+<td class="abstract">
+                Here’s the abstract for the plenary talk! Notice again that the formatting of this time-block is a bit different that the rest of of the talks.
                 Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
             </td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
+</tr>
+</table>
+<table>
+<tr>
+<td class="date" rowspan="2">
                 Noon
             </td>
-            <td class="title-special">
+<td class="title-special">
                 Lunch
             </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
+</tr>
+<tr>
+<td class="abstract">
+</td>
+</tr>
+</table>
+<table id="PUTSPEAKERNAMEHERE">
+<tr>
+<td class="date" rowspan="3">
                 1:30pm
             </td>
-            <td class="title">
+<td class="title">
                 Interesting Title of a Talk 
             </td>
-        </tr>
-        <tr>
-            <td class="speaker">
+</tr>
+<tr>
+<td class="speaker">
                 Speaker Name (University)
             </td>
-        </tr>
-        <tr>
-            <td class="abstract">
+</tr>
+<tr>
+<td class="abstract">
                 Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
             </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
+</tr>
+</table>
+<table id="PUTSPEAKERNAMEHERE">
+<tr>
+<td class="date" rowspan="3">
                 1:55pm
             </td>
-            <td class="title">
+<td class="title">
                 Interesting Title of a Talk 
             </td>
-        </tr>
-        <tr>
-            <td class="speaker">
+</tr>
+<tr>
+<td class="speaker">
                 Speaker Name (University)
             </td>
-        </tr>
-        <tr>
-            <td class="abstract">
+</tr>
+<tr>
+<td class="abstract">
                 Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
             </td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
+</tr>
+</table>
+<table>
+<tr>
+<td class="date" rowspan="2">
                 2:50pm
             </td>
-            <td class="title-special">
+<td class="title-special">
                 Coffee &amp; Tea Break
             </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
+</tr>
+<tr>
+<td class="abstract">
+</td>
+</tr>
+</table>
+<table id="PUTSPEAKERNAMEHERE">
+<tr>
+<td class="date" rowspan="3">
                 3:10pm
             </td>
-            <td class="title">
+<td class="title">
                 Interesting Title of a Talk 
             </td>
-        </tr>
-        <tr>
-            <td class="speaker">
+</tr>
+<tr>
+<td class="speaker">
                 Speaker Name (University)
             </td>
-        </tr>
-        <tr>
-            <td class="abstract">
+</tr>
+<tr>
+<td class="abstract">
                 Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
             </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
+</tr>
+</table>
+<table id="PUTSPEAKERNAMEHERE">
+<tr>
+<td class="date" rowspan="3">
                 3:35pm
             </td>
-            <td class="title">
+<td class="title">
                 Interesting Title of a Talk 
             </td>
-        </tr>
-        <tr>
-            <td class="speaker">
+</tr>
+<tr>
+<td class="speaker">
                 Speaker Name (University)
             </td>
-        </tr>
-        <tr>
-            <td class="abstract">
+</tr>
+<tr>
+<td class="abstract">
                 Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
             </td>
-        </tr>
-    </table>
-
-    <table class="plenary">
-        <tr>
-            <td class="date" rowspan="3">
+</tr>
+</table>
+<table class="plenary">
+<tr>
+<td class="date" rowspan="3">
                 4:00pm
             </td>
-            <td class="title">
+<td class="title">
                 This is Another Plenary Talk!
             </td>
-        </tr>
-        <tr>
-            <td class="speaker">
+</tr>
+<tr>
+<td class="speaker">
                 Plenary Speaker
             </td>
-        </tr>
-        <tr>
-            <td class="abstract">
+</tr>
+<tr>
+<td class="abstract">
                 Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
             </td>
-        </tr>
-    </table>
+</tr>
+</table>
+    -->
 <p>
 <footer style="background-color: #1a1a1a; color: #ffffff; padding: 20px 0; text-align: center; font-family: Arial, sans-serif;">
-  <div style="width: 100%; margin: 0 auto;">
-    <p style="margin: 0; font-size: 16px;">&copy; 2025 O-COCOSDA. All rights reserved.</p>
-    <p style="margin: 5px 0 0; font-size: 14px;">Oriental Chapter of the International Committee for the Co-ordination and Standardisation of Speech Databases and Assessment Techniques</p>
-  </div>
+<div style="width: 100%; margin: 0 auto;">
+<p style="margin: 0; font-size: 16px;">© 2025 O-COCOSDA. All rights reserved.</p>
+<p style="margin: 5px 0 0; font-size: 14px;">Oriental Chapter of the International Committee for the Co-ordination and Standardisation of Speech Databases and Assessment Techniques</p>
+</div>
 </footer>
-
 <script>
   const slides = document.querySelectorAll('.slideshow-image');
   const captionElement = document.querySelector('.caption');
@@ -368,7 +403,5 @@
     captionElement.textContent = captions[current];
   }, 3000);
 </script>
-
-</body>
+</p></p></body>
 </html>
-
