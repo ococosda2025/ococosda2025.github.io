@@ -192,3 +192,47 @@ body {
 .gallery img:hover {
   transform: scale(1.03);
 }
+
+/* Style for the Organizer Tables */
+.organizer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.organizer-table th, .organizer-table td {
+  padding: 12px 20px;  /* Menambah padding kiri-kanan untuk penjorokan */
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.organizer-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+}
+
+.organizer-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.organizer-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.organizer-table td {
+  color: #555;
+}
+
+.organizer-table tbody td:first-child {
+  font-weight: bold;
+}
+
+h3 {
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: #333;
+}
+
