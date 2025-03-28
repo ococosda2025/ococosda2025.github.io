@@ -23,9 +23,29 @@
       background-color: #8f1024;
     }
     .countdown {
-      font-size: 1.5em;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #f9f9f9;
+      padding: 20px 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       margin-top: 20px;
-      color: #333;
+    }
+    .time-box {
+      text-align: center;
+    }
+    .time-box .num {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #b2132e;
+      line-height: 1.2;
+    }
+    .time-box .label {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 5px;
+      letter-spacing: 0.5px;
     }
     .landing-container {
       text-align: center;
@@ -87,10 +107,17 @@
       const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const s = Math.floor((distance % (1000 * 60)) / 1000);
-      countdownEl.innerHTML = d + "d " + h + "h " + m + "m " + s + "s ";
+
+      countdownEl.innerHTML = `
+        <div class="time-box"><div class="num">${d}</div><div class="label">days</div></div>
+        <div class="time-box"><div class="num">${h}</div><div class="label">hours</div></div>
+        <div class="time-box"><div class="num">${m}</div><div class="label">minutes</div></div>
+        <div class="time-box"><div class="num">${s}</div><div class="label">seconds</div></div>
+      `;
+
       if (distance < 0) {
         clearInterval(countdownTimer);
-        countdownEl.innerHTML = "Conference has started!";
+        countdownEl.innerHTML = "<div class='time-box'><div class='num'>0</div><div class='label'>Conference has started!</div></div>";
       }
     }, 1000);
   </script>
