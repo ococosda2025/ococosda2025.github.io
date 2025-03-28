@@ -14,6 +14,10 @@ body {
     overflow-y:scroll;
 }
 
+p {
+  text-align: justify;
+}
+
 /* Conference Title Logo */
 .title1{color: #b2132e; text-shadow: 1px 1px 3px #c0c0c0;} 
 .title2{color: #52739e; text-shadow: 1px 1px 3px #c0c0c0;}
