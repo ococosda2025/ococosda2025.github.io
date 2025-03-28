@@ -121,5 +121,26 @@
       }
     }, 1000);
   </script>
+<script>
+  const correctPassword = "panitia2025"; // Ganti dengan password kamu
+  const storageKey = "ococosda2025_auth";
+
+  function checkAuth() {
+    // Kalau sudah login sebelumnya, langsung lanjut
+    if (localStorage.getItem(storageKey) === "granted") return;
+
+    // Kalau belum, minta password
+    const userPassword = prompt("Masukkan password untuk mengakses situs ini:");
+
+    if (userPassword === correctPassword) {
+      localStorage.setItem(storageKey, "granted"); // Simpan status login
+    } else {
+      document.body.innerHTML = "<h1>Akses Ditolak</h1><p>Password salah. Hubungi panitia untuk akses.</p>";
+    }
+  }
+
+  checkAuth();
+</script>
+
 </body>
 </html>
