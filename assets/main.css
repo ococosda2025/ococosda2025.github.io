@@ -313,3 +313,15 @@ h3 {
   font-size: 1.5em;
   color: #333;
 }
+
+.logo-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logo-title-wrapper .logo-image {
+  height: 70px;
+  width: auto;
+}
