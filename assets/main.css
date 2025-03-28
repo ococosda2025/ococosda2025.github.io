@@ -78,16 +78,29 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
+.conf-title {
+  font-size: 5.33em;
+  color: #505050;
+  background: #fafafa;
+  text-align: center;
+  padding-top: 5px; /* ubah dari 36px jika perlu lebih banyak spasi */
+  width: 1000px;
+  height: 67px;
+  position: relative;
+  margin-top: 10px;
+  z-index: 10; /* tambah ini */
+}
+
 .top-left {
     font-size: 5.33em;
     color: #505050;
     background: #fafafa;
     text-align: center;
-    width: 1000px;
+    padding-top: 5px; /* ubah dari 36px jika perlu lebih banyak spasi */
     height: 67px;
-    position: absolute;
-    padding: 36px 0 0 0;
-    top: 0px;
+    width: 1000px;
+    position: relative;
+    margin-top: 10px;
     z-index: 10; /* tambah ini */
 }
 
