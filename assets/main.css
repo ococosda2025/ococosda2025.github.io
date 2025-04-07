@@ -480,3 +480,10 @@ body {
   padding: 20px;
   text-align: center;
 }
+
+
+@media (max-width: 600px) {
+  .title1, .title2 {
+    font-size: 2em;
+  }
+}
