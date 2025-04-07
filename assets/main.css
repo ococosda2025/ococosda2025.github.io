@@ -5,7 +5,9 @@ body {
     background-attachment: fixed;
     color: #505050;
     text-align: left;
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+             "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+             "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 12pt;
     line-height: 1.5em;
     margin: 60px auto;
@@ -362,6 +364,6 @@ p {
 
 /* Custom font and color for headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: inherit;
   color: #2c3e50; /* dark slate blue-gray, elegan dan profesional */
 }
