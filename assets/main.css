@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* General body styles */
 body {
     background-color: #fafafa;
@@ -11,7 +15,9 @@ body {
     font-size: 12pt;
     line-height: 1.5em;
     margin: 60px auto;
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 15px;
     overflow-y:scroll;
 }
 
@@ -89,7 +95,9 @@ body {
   background: #fafafa;
   text-align: center;
   padding-top: 5px; /* ubah dari 36px jika perlu lebih banyak spasi */
-  width: 1000px;
+  max-width: 1000px;
+    width: 100%;
+    padding: 0 15px;
   height: 67px;
   position: relative;
   margin-top: 10px;
@@ -103,7 +111,9 @@ body {
     text-align: center;
     padding-top: 5px; /* ubah dari 36px jika perlu lebih banyak spasi */
     height: 67px;
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 15px;
     position: relative;
     margin-top: 10px;
     z-index: 10; /* tambah ini */
@@ -366,4 +376,61 @@ p {
 h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
   color: #2c3e50; /* dark slate blue-gray, elegan dan profesional */
+}
+
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  .conf-title, .top-left {
+    font-size: 2.5em;
+    padding-top: 10px;
+    height: auto;
+  }
+
+  .countdown {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo-title-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner-slideshow {
+    height: 300px;
+  }
+
+  .bottom-right {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    position: static;
+  }
+
+  .enter-button {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  body {
+    padding: 0 10px;
+    margin: 60px 0 0 0;
+  }
+
+  .registration-table, .organizer-table {
+    font-size: 0.9em;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .navigation a {
+    font-size: 1em;
+    padding: 5px 10px;
+  }
+
+  .logo-image {
+    height: 50px;
+  }
 }
