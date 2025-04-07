@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The 28th International Conference of the Oriental COCOSDA</title>
-  <link href="assets/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The 28th International Conference of the Oriental COCOSDA</title>
+<link href="assets/main.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
     .enter-button {
       display: inline-block;
       padding: 12px 24px;
@@ -51,41 +52,74 @@
       text-align: center;
       margin-top: 30px;
     }
-  </style>
+  
+@media (max-width: 600px) {
+  .conf-title, .top-left {
+    font-size: 2.5em;
+    padding-top: 10px;
+    height: auto;
+  }
+
+  .countdown {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo-title-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner-slideshow {
+    height: 300px;
+  }
+
+  .bottom-right {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    position: static;
+  }
+
+  .enter-button {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+</style>
 </head>
 <body>
 <div class="conf-title logo-title-wrapper">
-  <img src="assets/logo.png" alt="O-COCOSDA Logo" class="logo-image">
-  <div>
-    <span class="title1">O-COCOSDA</span> <span class="title2">2025</span>
-  </div>
+<img alt="O-COCOSDA Logo" class="logo-image" src="assets/logo.png"/>
+<div>
+<span class="title1">O-COCOSDA</span> <span class="title2">2025</span>
 </div>
-<br>
-  <div class="banner banner-slideshow">
-    <img src="assets/borobudur-1.jpg" class="slideshow-image active" alt="Borobudur Temple">
-    <img src="assets/keraton yogya-1.jpg" class="slideshow-image" alt="Keraton Yogyakarta">
-    <img src="assets/tugu-Jogja-1.jpg" class="slideshow-image" alt="Tugu Jogja">
-    <div class="caption">The Borobudur Temple</div>
-    <div class="bottom-right">
-      November 11~13, 2025 <br/> Royal Ambarrukmo Hotel, Yogyakarta
-    </div>
-  </div>
-
-  <div class="landing-container">
-    <h2>Welcome to O-COCOSDA 2025!</h2>
-    <div text-align="center">The 28th International Conference of Oriental COCOSDA will start in:</div>
-    <div id="countdown" class="countdown"></div>
-    <a href="index2.html" class="enter-button">Enter</a>
-  </div>
-  <p>
-  <footer style="background-color: #1a1a1a; color: #ffffff; padding: 20px 0; text-align: center; font-family: Arial, sans-serif;">
-    <div style="width: 100%; margin: 0 auto;">
-      <p style="margin: 0; font-size: 16px; text-align: center">© 2025 O-COCOSDA. All rights reserved.</p>
-      <p style="margin: 5px 0 0; font-size: 14px; text-align: center">Oriental Chapter of the International Committee for the Co-ordination and Standardisation of Speech Databases and Assessment Techniques</p>
-    </div>
-  </footer>
-
-  <script>
+</div>
+<br/>
+<div class="banner banner-slideshow">
+<img alt="Borobudur Temple" class="slideshow-image active" src="assets/borobudur-1.jpg"/>
+<img alt="Keraton Yogyakarta" class="slideshow-image" src="assets/keraton yogya-1.jpg"/>
+<img alt="Tugu Jogja" class="slideshow-image" src="assets/tugu-Jogja-1.jpg"/>
+<div class="caption">The Borobudur Temple</div>
+<div class="bottom-right">
+      November 11~13, 2025 <br> Royal Ambarrukmo Hotel, Yogyakarta
+    </br></div>
+</div>
+<div class="landing-container">
+<h2>Welcome to O-COCOSDA 2025!</h2>
+<div text-align="center">The 28th International Conference of Oriental COCOSDA will start in:</div>
+<div class="countdown" id="countdown"></div>
+<a class="enter-button" href="index2.html">Enter</a>
+</div>
+<p>
+<footer style="background-color: #1a1a1a; color: #ffffff; padding: 20px 0; text-align: center; font-family: Arial, sans-serif;">
+<div style="width: 100%; margin: 0 auto;">
+<p style="margin: 0; font-size: 16px; text-align: center">© 2025 O-COCOSDA. All rights reserved.</p>
+<p style="margin: 5px 0 0; font-size: 14px; text-align: center">Oriental Chapter of the International Committee for the Co-ordination and Standardisation of Speech Databases and Assessment Techniques</p>
+</div>
+</footer>
+<script>
     const slides = document.querySelectorAll('.slideshow-image');
     const captionElement = document.querySelector('.caption');
     const captions = [
@@ -146,5 +180,5 @@
   //checkAuth();
 </script>
 -->
-</body>
+</p></body>
 </html>
