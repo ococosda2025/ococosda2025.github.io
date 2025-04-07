@@ -1,0 +1,5 @@
+echo "rm backup.zip"
+rm backup.zip
+echo "zip -r backup.zip *"
+zip -r backup.zip *
+
