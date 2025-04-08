@@ -243,7 +243,7 @@ p {
 }
 
 .organizer-table tbody td:first-child {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 h3 {
@@ -529,3 +529,15 @@ body {
   }
 }
 
+/* Tambahan untuk memastikan kompatibilitas lintas browser */
+.organizer-table td {
+  font-weight: normal;
+}
+
+.organizer-table td strong {
+  font-weight: bold;
+}
+
+.organizer-table td span {
+  font-weight: normal;
+}
