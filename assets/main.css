@@ -487,3 +487,28 @@ body {
     font-size: 2em;
   }
 }
+.organizer-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.organizer-group .organizer {
+  flex: 1 1 300px;
+}
+
+
+/* Stylish horizontal line for section headings */
+
+
+
+/* Stylish horizontal line for section headings */
+.section-divider {
+  border: 0;
+  height: 3px;
+  background: linear-gradient(to right, #b2132e, #e74c3c);
+  margin-bottom: 15px;
+  margin-top: 40px;
+  border-radius: 2px;
+  width: 300px;
+}
