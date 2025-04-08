@@ -2,4 +2,6 @@ echo "rm backup.zip"
 rm backup.zip
 echo "zip -r backup.zip *"
 zip -r backup.zip *
+echo "cp -r backup.zip ~/Downloads"
+cp -r backup.zip ~/Downloads
 
