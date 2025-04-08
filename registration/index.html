@@ -50,7 +50,7 @@
 </div>
 </div>
 <div style="padding: 20px; text-align: center">
-<h3>11–13 November 2025, Royal Ambarrukmo Hotel, Yogyakarta, Indonesia</h3>
+  <h3>11–13 November 2025, <!--Royal Ambarrukmo Hotel, -->Yogyakarta, Indonesia</h3>
 </div>
 <div style="background-color: #ffcc00; color: #000; padding: 10px; text-align: center; font-weight: bold;">
   🚧 This site is currently under construction. Content is being updated regularly. Stay tuned!
@@ -146,6 +146,19 @@ Cancellation due to governmental travel restrictions, failure to obtain a visa, 
     slides[current].classList.add('active');
     captionElement.textContent = captions[current];
   }, 3000);
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll('.navigation > a, .navigation .dropbtn');
+    const currentPath = window.location.pathname.replace(/\/$/, '');
+
+    links.forEach(link => {
+      const linkPath = new URL(link.href).pathname.replace(/\/$/, '');
+      if (linkPath === currentPath) {
+        link.classList.add('active');
+      }
+    });
+  });
 </script>
 
 </body>
