@@ -197,9 +197,7 @@ p {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-.organizer h3 {
-  margin: 0;
-}
+.organizer 
 
 .organizer p {
     text-align: justify;
@@ -246,11 +244,7 @@ p {
   font-weight: normal;
 }
 
-h3 {
-  margin-top: 30px;
-  font-size: 1.5em;
-  color: #333;
-}
+
 
 /* Style for the Registration Table */
 .registration-table {
@@ -289,11 +283,7 @@ h3 {
   font-weight: bold;
 }
 
-h3 {
-  margin-top: 20px;
-  font-size: 1.5em;
-  color: #333;
-}
+
 
 .logo-title-wrapper {
   display: flex;
@@ -307,9 +297,7 @@ h3 {
   width: auto;
 }
 /* Adjust spacing between heading and paragraph */
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 10px;
-}
+
 
 p {
     text-align: justify;
@@ -318,16 +306,6 @@ p {
 
   margin-top: 5px;
 }
-
-/* Custom font and color for headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: inherit;
-  color: #2c3e50; /* dark slate blue-gray, elegan dan profesional */
-}
-
-
-
-
 
 .conf-title, 
 
@@ -540,4 +518,12 @@ body {
 
 .organizer-table td span {
   font-weight: normal;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  color: #2c3e50;
 }
