@@ -700,6 +700,6 @@ h1, h2, h3, h4, h5, h6 {
 .grid-content p {
   margin-bottom: 15px;
   text-align: justify;
-  font-size: 0.5em; /* atau 14px */
+  font-size: 0.9em; /* atau 14px */
   line-height: 1.6em;
 }
