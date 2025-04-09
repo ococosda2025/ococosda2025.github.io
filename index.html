@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -92,94 +92,73 @@
 </head>
 <body>
 <div class="conf-title logo-title-wrapper">
-<img alt="O-COCOSDA Logo" class="logo-image" src="assets/logo.webp"/>
-<div>
-<span class="title1">O-COCOSDA</span> <span class="title2">2025</span>
-</div>
+  <img alt="O-COCOSDA Logo" class="logo-image" src="assets/logo.webp"/>
+  <div>
+    <span class="title1">O-COCOSDA</span> <span class="title2">2025</span>
+  </div>
 </div>
 <div class="event-dates">
-<h3>11–13 November 2025, Yogyakarta, Indonesia</h3>
+  <h3>11–13 November 2025, Yogyakarta, Indonesia</h3>
 </div>
 <br/>
 <div class="banner banner-slideshow">
-<img alt="Borobudur Temple" class="slideshow-image active" src="assets/borobudur-1.webp"/>
-<img alt="Keraton Yogyakarta" class="slideshow-image" src="assets/keraton yogya-1.webp"/>
-<img alt="Tugu Jogja" class="slideshow-image" src="assets/tugu-Jogja-1.webp"/>
-<div class="caption">The Borobudur Temple</div>
+  <img alt="Borobudur Temple" class="slideshow-image active" src="assets/borobudur-1.webp"/>
+  <img alt="Keraton Yogyakarta" class="slideshow-image" src="assets/keraton yogya-1.webp"/>
+  <img alt="Tugu Jogja" class="slideshow-image" src="assets/tugu-Jogja-1.webp"/>
+  <div class="caption">The Borobudur Temple</div>
 </div>
 <div class="landing-container">
-<h2>Welcome to O-COCOSDA 2025!</h2>
-<div text-align="center">The 28th International Conference of Oriental COCOSDA will start in:</div>
-<div class="countdown" id="countdown"></div>
-<a class="enter-button" href="index2.html">Enter</a>
+  <h2>Welcome to O-COCOSDA 2025!</h2>
+  <div text-align="center">The 28th International Conference of Oriental COCOSDA will start in:</div>
+  <div class="countdown" id="countdown"></div>
+  <a class="enter-button" href="index2.html">Enter</a>
 </div>
 <br>
 <footer class="site-footer">
-<div style="width: 100%; margin: 0 auto;">
-<p style="margin: 0; font-size: 16px; text-align: center">© 2025 O-COCOSDA. All rights reserved.</p>
-<p style="margin: 5px 0 0; font-size: 14px; text-align: center">Oriental Chapter of the International Committee for the Co-ordination and Standardisation of Speech Databases and Assessment Techniques</p>
-</div>
+  <div style="width: 100%; margin: 0 auto;">
+    <p style="margin: 0; font-size: 16px; text-align: center">© 2025 O-COCOSDA. All rights reserved.</p>
+    <p style="margin: 5px 0 0; font-size: 14px; text-align: center">Oriental Chapter of the International Committee for the Co-ordination and Standardisation of Speech Databases and Assessment Techniques</p>
+  </div>
 </footer>
 <script>
-    const slides = document.querySelectorAll('.slideshow-image');
-    const captionElement = document.querySelector('.caption');
-    const captions = [
-      'The Borobudur Temple',
-      'The Yogyakarta Sultanate Palace',
-      'The Yogyakarta Monument'
-    ];
+  const slides = document.querySelectorAll('.slideshow-image');
+  const captionElement = document.querySelector('.caption');
+  const captions = [
+    'The Borobudur Temple',
+    'The Yogyakarta Sultanate Palace',
+    'The Yogyakarta Monument'
+  ];
 
-    let current = 0;
-    setInterval(() => {
-      slides[current].classList.remove('active');
-      current = (current + 1) % slides.length;
-      slides[current].classList.add('active');
-      captionElement.textContent = captions[current];
-    }, 4000);
+  let current = 0;
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+    captionElement.textContent = captions[current];
+  }, 4000);
 
-    const countdownDate = new Date("November 11, 2025 08:00:00 GMT+0700").getTime();
-    const countdownEl = document.getElementById("countdown");
-    const countdownTimer = setInterval(function() {
-      const now = new Date().getTime();
-      const distance = countdownDate - now;
-      const d = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const s = Math.floor((distance % (1000 * 60)) / 1000);
+  const countdownDate = new Date("November 11, 2025 08:00:00 GMT+0700").getTime();
+  const countdownEl = document.getElementById("countdown");
+  const countdownTimer = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+    const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const s = Math.floor((distance % (1000 * 60)) / 1000);
 
-      countdownEl.innerHTML = `
-        <div class="time-box"><div class="num">${d}</div><div class="label">days</div></div>
-        <div class="time-box"><div class="num">${h}</div><div class="label">hours</div></div>
-        <div class="time-box"><div class="num">${m}</div><div class="label">minutes</div></div>
-        <div class="time-box"><div class="num">${s}</div><div class="label">seconds</div></div>
-      `;
+    countdownEl.innerHTML = `
+      <div class="time-box"><div class="num">${d}</div><div class="label">days</div></div>
+      <div class="time-box"><div class="num">${h}</div><div class="label">hours</div></div>
+      <div class="time-box"><div class="num">${m}</div><div class="label">minutes</div></div>
+      <div class="time-box"><div class="num">${s}</div><div class="label">seconds</div></div>
+    `;
 
-      if (distance < 0) {
-        clearInterval(countdownTimer);
-        countdownEl.innerHTML = "<div class='time-box'><div class='num'>0</div><div class='label'>Conference has started!</div></div>";
-      }
-    }, 1000);
-  </script>
-<!--<script>
-  //const correctPassword = "panitia2025"; // Ganti dengan password kamu
-  //const storageKey = "ococosda2025_auth";
-
-  //function checkAuth() {
-    // Kalau sudah login sebelumnya, langsung lanjut
-    //if (localStorage.getItem(storageKey) === "granted") return;
-
-    //// Kalau belum, minta password
-    //const userPassword = prompt("Masukkan password untuk mengakses situs ini:");
-//
-    //if (userPassword === correctPassword) {
-      //localStorage.setItem(storageKey, "granted"); // Simpan status login
-    //} else {
-      //document.body.innerHTML = "<h1>Akses Ditolak</h1><p>Password salah. Hubungi panitia untuk akses.</p>";
-    //}
-  //}
-
-  //checkAuth();
+    if (distance < 0) {
+      clearInterval(countdownTimer);
+      countdownEl.innerHTML = "<div class='time-box'><div class='num'>0</div><div class='label'>Conference has started!</div></div>";
+    }
+  }, 1000);
 </script>
--->
-</p></body>
+</body>
 </html>
