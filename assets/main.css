@@ -420,11 +420,11 @@ body {
   padding: 0;
   overflow-y: scroll;
 
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 3%;
+  padding-right: 3%;
 
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 3%;
+  padding-right: 3%;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -721,5 +721,34 @@ h1, h2, h3, h4, h5, h6 {
 
   .logo-title-wrapper {
     max-width: 100%;
+  }
+}
+
+/* Further media queries to improve mobile display */
+@media (max-width: 600px) {
+  body {
+    padding-left: 5%;  /* Reduce padding for smaller screens */
+    padding-right: 5%;
+  }
+
+  .banner-slideshow {
+    height: 250px;  /* Further adjust slideshow height */
+  }
+
+  .enter-button {
+    font-size: 1em;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .logo-title-wrapper {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .countdown {
+    flex-direction: column;
+    gap: 10px;
   }
 }
