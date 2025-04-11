@@ -9,6 +9,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
 <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 <style>
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
     .enter-button {
       display: inline-block;
       padding: 12px 24px;
@@ -55,6 +62,66 @@
     }
   
 @media (max-width: 600px) {
+
+  .logo-title-wrapper img {
+    max-width: 90px !important;
+    height: auto !important;
+  }
+
+  .conf-title {
+    font-size: 1.4em !important;
+    line-height: 1.2em !important;
+    margin-top: 10px !important;
+  }
+
+  .countdown {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+
+  .time-box {
+    width: 45% !important;
+    margin: 5px auto !important;
+  }
+
+  .time-box .num {
+    font-size: 1.6em !important;
+  }
+
+  .time-box .label {
+    font-size: 0.75em !important;
+  }
+
+  .enter-button {
+    display: block !important;
+    margin: 30px auto 0 auto !important;
+    font-size: 1em !important;
+    text-align: center !important;
+  }
+
+  .logo-title-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .landing-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .countdown {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
   .conf-title, .top-left {
     font-size: 2.5em;
     padding-top: 10px;
