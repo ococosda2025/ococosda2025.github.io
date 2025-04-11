@@ -10,6 +10,67 @@
 <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 <style>
 
+body {
+  text-align: center !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.logo-title-wrapper,
+.landing-container,
+.countdown,
+footer {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.logo-title-wrapper,
+.landing-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.countdown {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+footer {
+  text-align: center !important;
+  width: 100% !important;
+}
+
+
+/* Global adjustment for footer font on desktop */
+footer {
+  font-size: 0.9em;
+}
+
+/* Mobile-specific overrides */
+@media (max-width: 600px) {
+  .logo-title-wrapper img {
+    max-width: 75px !important;
+  }
+
+  .conf-title {
+    font-size: 1.2em !important;
+  }
+
+  footer {
+    font-size: 0.7em !important;
+    text-align: center !important;
+    padding: 10px !important;
+  }
+}
+
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
