@@ -703,3 +703,27 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.9em; /* atau 14px */
   line-height: 1.6em;
 }
+
+.video-wrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  background-color: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: none;
+}
