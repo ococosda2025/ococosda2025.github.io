@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The 28th International Conference of the Oriental COCOSDA</title>
+<link href="assets/main.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<style>
+
+body {
+  text-align: center !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.logo-title-wrapper,
+.landing-container,
+.countdown,
+footer {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.logo-title-wrapper,
+.landing-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.countdown {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+footer {
+  text-align: center !important;
+  width: 100% !important;
+}
+
+
+/* Global adjustment for footer font on desktop */
+footer {
+  font-size: 0.9em;
+}
+
+/* Mobile-specific overrides */
+@media (max-width: 600px) {
+  .logo-title-wrapper img {
+    max-width: 75px !important;
+  }
+
+  .conf-title {
+    font-size: 1.2em !important;
+  }
+
+  footer {
+    font-size: 0.7em !important;
+    text-align: center !important;
+    padding: 10px !important;
+  }
+}
+
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+    .enter-button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      background-color: #b2132e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+    .enter-button:hover {
+      background-color: #8f1024;
+    }
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #f9f9f9;
+      padding: 20px 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .time-box {
+      text-align: center;
+    }
+    .time-box .num {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #b2132e;
+      line-height: 1.2;
+    }
+    .time-box .label {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 5px;
+      letter-spacing: 0.5px;
+    }
+    .landing-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+  
+@media (max-width: 600px) {
+
+  .logo-title-wrapper img {
+    max-width: 90px !important;
+    height: auto !important;
+  }
+
+  .conf-title {
+    font-size: 1.4em !important;
+    line-height: 1.2em !important;
+    margin-top: 10px !important;
+  }
+
+  .countdown {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+
+  .time-box {
+    width: 45% !important;
+    margin: 5px auto !important;
+  }
+
+  .time-box .num {
+    font-size: 1.6em !important;
+  }
+
+  .time-box .label {
+    font-size: 0.75em !important;
+  }
+
+  .enter-button {
+    display: block !important;
+    margin: 30px auto 0 auto !important;
+    font-size: 1em !important;
+    text-align: center !important;
+  }
+
+  .logo-title-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .landing-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .countdown {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .conf-title, .top-left {
+    font-size: 2.5em;
+    padding-top: 10px;
+    height: auto;
+  }
+
+  .countdown {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo-title-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner-slideshow {
+    height: 300px;
+  }
+
+  .bottom-right {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    position: static;
+  }
+
+  .enter-button {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+</style>
+</head>
+<body>
+<div class="conf-title logo-title-wrapper">
+  <img alt="O-COCOSDA Logo" class="logo-image" src="assets/logo.webp"/>
+  <div>
+    <span class="title1">O-COCOSDA</span> <span class="title2">2025</span>
+  </div>
+</div>
+<div class="event-dates">
+  <h3>11–13 November 2025, Universitas Kristen Duta Wacana (UKDW), Yogyakarta, Indonesia</h3>
+</div>
+<br/>
+<div class="banner banner-slideshow">
+  <img alt="UKDW" class="slideshow-image active" src="assets/UKDW-1.webp"/>
+  <img alt="UKDW" class="slideshow-image active" src="assets/UKDW-2.webp"/>
+  <img alt="Borobudur Temple" class="slideshow-image active" src="assets/borobudur-1.webp"/>
+<img alt="Borobudur Temple 2" class="slideshow-image" src="assets/borobudur-2.webp">
+  <img alt="Keraton Yogyakarta" class="slideshow-image" src="assets/keraton yogya-1.webp"/>
+  <img alt="The Serimpi Dance" class="slideshow-image" src="assets/serimpi.webp"/>
+  <img alt="Tugu Jogja" class="slideshow-image" src="assets/tugu-Jogja-1.webp"/>
+  <div class="caption">The Borobudur Temple</div>
+</div>
+<div class="landing-container">
+  <h2>Welcome to O-COCOSDA 2025!</h2>
+  <div text-align="center">The 28th International Conference of Oriental COCOSDA will start in:</div>
+  <div class="countdown" id="countdown"></div>
+  <a class="enter-button" href="index2-ukdw.html">Enter</a>
+</div>
+<br>
+<footer class="site-footer">
+  <div style="width: 100%; margin: 0 auto;">
+    <p style="margin: 0; font-size: 16px; text-align: center">© 2025 O-COCOSDA. All rights reserved.</p>
+    <p style="margin: 5px 0 0; font-size: 14px; text-align: center">Oriental Chapter of the International Committee for the Co-ordination and Standardisation of Speech Databases and Assessment Techniques</p>
+  </div>
+</footer>
+<script>
+  const slides = document.querySelectorAll('.slideshow-image');
+  const captionElement = document.querySelector('.caption');
+  const captions = [
+    'UKDW, the Venue',
+    'UKDW, the Venue',
+    'The Borobudur Temple',
+    'The Borobudur Temple',
+    'The Yogyakarta Sultanate Palace',
+    'The Serimpi Dance',
+    'The Yogyakarta Monument'
+  ];
+
+  let current = 0;
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+    captionElement.textContent = captions[current];
+  }, 4000);
+
+  const countdownDate = new Date("November 11, 2025 08:00:00 GMT+0700").getTime();
+  const countdownEl = document.getElementById("countdown");
+  const countdownTimer = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+    const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const s = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdownEl.innerHTML = `
+      <div class="time-box"><div class="num">${d}</div><div class="label">days</div></div>
+      <div class="time-box"><div class="num">${h}</div><div class="label">hours</div></div>
+      <div class="time-box"><div class="num">${m}</div><div class="label">minutes</div></div>
+      <div class="time-box"><div class="num">${s}</div><div class="label">seconds</div></div>
+    `;
+
+    if (distance < 0) {
+      clearInterval(countdownTimer);
+      countdownEl.innerHTML = "<div class='time-box'><div class='num'>0</div><div class='label'>Conference has started!</div></div>";
+    }
+  }, 1000);
+</script>
+</body>
+</html>
