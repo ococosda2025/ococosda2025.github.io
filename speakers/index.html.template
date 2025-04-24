@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<base href=".."/>
+<link href="assets/main.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="assets/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet"/> <!-- Link untuk font Roboto -->
+<meta charset="utf-8"/>
+<meta content="O-COCOSDA 2025" name="description"/>
+<meta content="document" name="resource-type"/>
+<meta content="global" name="distribution"/>
+<meta content="Conference" name="KeyWords"/>
+<title>The 28th International Conference of the Oriental COCOSDA</title>
+</head>
+<body style="margin-top: 70px;">
+<div class="navigation">
+<div class="dropdown">
+<a class="dropbtn" href="index2.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Conference Home Page">Home ▾</a>
+<div class="dropdown-content">
+<a href="index2.html#organizers" style="font-size:18px; font-weight:500; margin-right:15px;">Organizers</a>
+</div>
+</div>
+<a href="cfp/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Call for Papers">Call for Papers</a>
+<a href="previous.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Previous Conferences">Previous Conferences</a>
+<a href="program/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Conference Program">Program</a>
+<a href="speakers/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Speakers">Speakers</a>
+<a href="registration/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Register for the Conference">Registration</a>
+<a href="venue/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Venue">Venue</a>
+<div class="dropdown">
+<a class="dropbtn" href="travel/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Travel">Travel ▾</a>
+<div class="dropdown-content">
+<a href="travel/index.html#visa-info" style="font-size:18px; font-weight:500; margin-right:15px;">Visa</a>
+</div>
+</div>
+<a href="mailto:ococosda2025@gmail.com" style="font-size:18px; font-weight:500; margin-right:15px;" title="Contact">Contact</a>
+</div>
+
+<div style="margin-top: 100px;"></div>
+<div class="top-left logo-title-wrapper">
+<img alt="O-COCOSDA Logo" class="logo-image" src="assets/logo.webp"/>
+<div>
+<span class="title1">O-COCOSDA</span> <span class="title2">2025</span>
+</div>
+</div>
+<div style="padding: 20px; text-align: center">
+  <h3>11–13 November 2025, Universitas Kristen Duta Wacana (UKDW), Yogyakarta, Indonesia</h3>
+
+</div>
+<div style="background-color: #ffcc00; color: #000; padding: 10px; text-align: center; font-weight: bold;">
+  🚧 This site is currently under construction. Content is being updated regularly. Stay tuned!
+</div>
+<p>
+<h3>
+<div class="speaker-card">
+  <div class="speaker-grid">
+    <div class="grid-photo">
+      <img alt="Prof. Jen-Tzung Chien" src="assets/photos/JEN-TZUNG.webp"/>
+    </div>
+    <div class="grid-title">
+      <h3 class="presentation-title">Learning Towards Generative and Conversational AI</h3>
+      <h4>Speaker: <a href="https://iece.dee.nycu.edu.tw/teachers.php?pa=getItem&amp;teacher_id=124&amp;locale=tw" target="_blank">Prof. Jen-Tzung Chien</a></h4><br>
+      <h4>Session Chair: Hsin-Min Wang, Academia Sinica, Taiwan</h4>
+      <b>Lifetime Chair Professor, National Yang Ming Chiao Tung University</b>
+    </div>
+    <div class="grid-content">
+      <h3 class="label"><b>Biography</b></h3>
+      <p>Jen-Tzung Chien received his Ph.D. degree in electrical engineering from National Tsing Hua University, Hsinchu, Taiwan, in 1997, and is currently the Lifetime Chair Professor in National Yang Ming Chiao Tung University, Hsinchu, Taiwan. He has authored more than 250 peer-reviewed articles in machine learning, deep learning, and Bayesian learning with applications on speech and natural language processing, and three books including Bayesian Speech and Language Processing, Cambridge University Press, 2015, Source Separation and Machine Learning, Academic Press, 2018, and Machine Learning for Speaker Recognition, Cambridge University Press, 2020. He was a Tutorial Speaker of AAAI, IJCAI, ACL, KDD, ICASSP, COLING and Interspeech. He received the Best Paper Award in IEEE Workshop on Automatic Speech Recognition and Understanding in 2011, and IEEE International Workshop on Machine Learning for Signal Processing in 2023.</p>
+      <h3 class="label"><b>Abstract</b></h3>
+      <p>Spoken dialogue systems have become crucial to build a wide range of virtual assistants for customer service, entertainment and health. These systems are composed of various components including automatic speech recognition, text-to-speech, and natural language generation, which involve delicate multimodal machine learning towards multilingual generative models. This talk will focus on state-of-the-art generative models in individual components and address how the pre-trained foundation models are utilized to re-shape the architecture via adapters, re-function the foundation via prompting and re-program the dialogue via flow control. We will also explore the challenges and opportunities through learning and integrating these components into a comprehensive conversation system.</p>
+    </div>
+  </div>
+</div>
+
+<div class="speaker-card">
+  <div class="speaker-grid">
+    <div class="grid-photo">
+      <img alt="Prof. Chin-Hui Lee" src="assets/photos/CHIN-HUI.webp"/>
+    </div>
+    <div class="grid-title">
+      <h3 class="presentation-title">Language-Universal Speech Processing: Lessons from ASAT and Large Pre-trained Models</h3>
+      <h4>Speaker: Prof. Chin-Hui Lee</h4><br>
+      <h4>Session Chair: Yu Tsao, Academia Sinica, Taiwan</h4>
+      <b>IEEE &amp; ISCA Fellow, Georgia Tech</b>
+    </div>
+    <div class="grid-content">
+      <h3 class="label"><b>Biography</b></h3>
+      <p>Prof. Lee is a professor at Georgia Tech and former director at Bell Labs. He has published around 600 papers with 55,000+ citations, and received numerous awards including the ISCA Medal for Scientific Achievement. He is renowned for his contributions in automatic speech and speaker recognition.</p>
+      <h3 class="label"><b>Abstract</b></h3>
+      <p>This talk will present recent progress in language-universal speech processing based on the ASAT (All-Scenario All-Target) paradigm. We will introduce how large pre-trained models are adapted to different speech applications across various languages, with a focus on scalability and efficiency.</p>
+    </div>
+  </div>
+</div>
+
+<div class="speaker-card">
+  <div class="speaker-grid">
+    <div class="grid-photo">
+      <img alt="Prof. Satoshi Nakamura" src="assets/photos/Satoshi.webp"/>
+    </div>
+    <div class="grid-title">
+      <h3 class="presentation-title">Recent Trends in Speech Translation</h3>
+      <h4>Speaker: <a href="https://sds.cuhk.edu.cn/en/teacher/1185" target="_blank">Prof. Satoshi Nakamura</a></h4><br>
+      <h4>Session Chair: Chin-Hui Lee, Georgia Tech, USA</h4>
+      <b>Professor, Chinese University of Hong Kong, Shenzhen</b>
+    </div>
+    <div class="grid-content">
+      <h3 class="label"><b>Biography</b></h3>
+      <p>Dr. Nakamura is a professor at CUHK, Shenzhen, and former director at NAIST and ATR. He played a pivotal role in speech-to-speech translation research through projects like C-Star and IWSLT, and contributed to standardization in ITU-T. He is a fellow of IEEE, ISCA, IPSJ, and ATR.</p>
+      <h3 class="label"><b>Abstract</b></h3>
+      <p>This talk discusses recent advances in speech-to-speech translation, highlighting challenges in multilingual processing, alignment, and fluency. It also explores how large pre-trained models and end-to-end training techniques have transformed the speech translation pipeline.</p>
+    </div>
+  </div>
+</div>
+<br/>
+<footer class="site-footer">
+<div style="width: 100%; margin: 0 auto;">
+<p style="margin: 0; font-size: 16px; text-align: center">© 2025 O-COCOSDA. All rights reserved.</p>
+<p style="margin: 5px 0 0; font-size: 14px; text-align: center">Oriental Chapter of the International Committee for the Co-ordination and Standardisation of Speech Databases and Assessment Techniques</p>
+</div>
+</footer>
+<script>
+  const slides = document.querySelectorAll('.slideshow-image');
+  const captionElement = document.querySelector('.caption');
+  const captions = [
+    'The Borobudur Temple',
+    'The Borobudur Temple',
+    'The Yogyakarta Sultanate Palace',
+    'The Yogyakarta Sultanate Palace',
+    'The Serimpi Dance',
+    'The Yogyakarta Monument'
+  ];
+
+  let current = 0;
+
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+    captionElement.textContent = captions[current];
+  }, 3000);
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll('.navigation > a, .navigation .dropbtn');
+    const currentPath = window.location.pathname.replace(/\/$/, '');
+
+    links.forEach(link => {
+      const linkPath = new URL(link.href).pathname.replace(/\/$/, '');
+      if (linkPath === currentPath) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+</h3></p></body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<base href=".."/>
+<link href="assets/main.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="assets/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet"/> <!-- Link untuk font Roboto -->
+<meta charset="utf-8"/>
+<meta content="O-COCOSDA 2025" name="description">
+<meta content="document" name="resource-type"/>
+<meta content="global" name="distribution"/>
+<meta content="Conference" name="KeyWords"/>
+<title>The 28th International Conference of the Oriental COCOSDA</title>
+</meta></link></head>
+<body style="margin-top: 70px;">
+<div class="navigation">
+<div class="dropdown">
+<a class="dropbtn" href="index2.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Conference Home Page">Home ▾</a>
+<div class="dropdown-content">
+<a href="index2.html#organizers" style="font-size:18px; font-weight:500; margin-right:15px;">Organizers</a>
+</div>
+</div>
+<a href="cfp/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Call for Papers">Call for Papers</a>
+<a href="previous.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Previous Conferences">Previous Conferences</a>
+<a href="program/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Conference Program">Program</a>
+<a href="speakers/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Speakers">Speakers</a>
+<a href="registration/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Register for the Conference">Registration</a>
+<a href="venue/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Venue">Venue</a>
+<div class="dropdown">
+<a class="dropbtn" href="travel/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Travel">Travel ▾</a>
+<div class="dropdown-content">
+<a href="travel/index.html#visa-info" style="font-size:18px; font-weight:500; margin-right:15px;">Visa</a>
+</div>
+</div>
+<a href="mailto:ococosda2025@gmail.com" style="font-size:18px; font-weight:500; margin-right:15px;" title="Contact">Contact</a>
+</div>
+
+<div style="margin-top: 100px;"></div>
+<div class="top-left logo-title-wrapper">
+<img alt="O-COCOSDA Logo" class="logo-image" src="assets/logo.webp"/>
+<div>
+<span class="title1">O-COCOSDA</span> <span class="title2">2025</span>
+</div>
+</div>
+
+<div style="padding: 20px; text-align: center">
+  <h3>11–13 November 2025, Universitas Kristen Duta Wacana (UKDW), Yogyakarta, Indonesia</h3>
+</div>
+<div style="background-color: #ffcc00; color: #000; padding: 10px; text-align: center; font-weight: bold;">
+  🚧 This site is currently under construction. Content is being updated regularly. Stay tuned!
+</div>
+<p>
+<h2>📝 Registration</h2>
+<p>The Full Registration fee covers the following costs to the conference:</p>
+<ul>
+<li>Admission to all conference sessions</li>
+<li>Lunch, plus morning and afternoon coffee breaks (with light snacks)</li>
+<li>Admission to the Welcome Reception on Thursday, 17th of October located at the conference venue</li>
+<li>A half-day cultural tour on Friday, 18th of October.</li>
+<li>Admission to the Banquet on Friday, 18th of October located at the Ambassador Hsinchu</li>
+</ul>
+<p>Please note: fees of accommodation and transportation from/to the airport are not included.</p>
+<h3>💵 Registration Fees</h3>
+<table class="registration-table">
+<thead>
+<tr>
+<th>Registration Type</th>
+<th>Early (Sept. 1-30)</th>
+<th>Late (Oct. 1-10)</th>
+<th>Onsite (Oct. 17-19)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regular Member</td>
+<td>NTD 10,000</td>
+<td>NTD 11,500</td>
+<td>NTD 13,000</td>
+</tr>
+<tr>
+<td>Regular Non-Member</td>
+<td>NTD 13,000</td>
+<td>NTD 14,500</td>
+<td>NTD 16,000</td>
+</tr>
+<tr>
+<td>Student Member</td>
+<td>NTD 5,000</td>
+<td>NTD 6,500</td>
+<td>NTD 8,000</td>
+</tr>
+<tr>
+<td>Student Non-Member</td>
+<td>NTD 6,500</td>
+<td>NTD 8,000</td>
+<td>NTD 9,500</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Notes:</strong><br/>
+One USD is almost equal to 33 NTD.<br/>
+Each accepted paper needs at least a Regular registration. One Regular registration can cover a maximum of one paper.<br/>
+Member fees are eligible for participants holding the current IEEE/ACLCLP/ISCA membership.<br/>
+Participants from least developed countries will be provided with a discounted fee. If you require financial assistance, please contact sarc@nycu.edu.tw in advance before registration.</p>
+<h2>❌ Cancellation Policy</h2>
+<p>Cancellation of registration one month or more prior to the conference (September 17th, 2024, or before) will be refunded the full amount paid (minus up to NTD 500 processing fee). Cancellations up to two weeks prior to the conference (October 3rd, 2024) will be refunded a half of amount paid (minus up to NTD 500 processing fee). Cancellations after two weeks prior to the start of the conference (October 4th, 2024, or after) and all no-shows will not be refunded.</p>
+<p>Registration fees can be transferred to an alternative participant. Please feel free to contact sarc@nycu.edu.tw for this request if needed.<br/>
+Cancellation due to governmental travel restrictions, failure to obtain a visa, or serious illness that prevents travel to the conference will be refunded the full amount paid (minus up to NTD 500 processing fee), regardless of when the notification is received before the start of the conference. Documentation supporting the cancellation exceptions is required.</p>
+<p>
+<br/>
+<footer class="site-footer">
+<div style="width: 100%; margin: 0 auto;">
+<p style="margin: 0; font-size: 16px; text-align: center">© 2025 O-COCOSDA. All rights reserved.</p>
+<p style="margin: 5px 0 0; font-size: 14px; text-align: center">Oriental Chapter of the International Committee for the Co-ordination and Standardisation of Speech Databases and Assessment Techniques</p>
+</div>
+</footer>
+<script>
+  const slides = document.querySelectorAll('.slideshow-image');
+  const captionElement = document.querySelector('.caption');
+  const captions = [
+    'The Borobudur Temple',
+    'The Borobudur Temple',
+    'The Yogyakarta Sultanate Palace',
+    'The Yogyakarta Sultanate Palace',
+    'The Serimpi Dance',
+    'The Yogyakarta Monument'
+  ];
+
+  let current = 0;
+
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+    captionElement.textContent = captions[current];
+  }, 3000);
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll('.navigation > a, .navigation .dropbtn');
+    const currentPath = window.location.pathname.replace(/\/$/, '');
+
+    links.forEach(link => {
+      const linkPath = new URL(link.href).pathname.replace(/\/$/, '');
+      if (linkPath === currentPath) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+</p></p></body>
+</html>
