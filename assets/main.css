@@ -495,14 +495,14 @@ body {
   margin-bottom: 15px;
   border-radius: 2px;
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   margin-left: 0;
 }
 
 /* Di layar mobile: tetap kiri tapi lebih pendek */
 @media (max-width: 768px) {
   .section-divider {
-    width: 70%;
+    width: 90%;
     margin-left: 0;
   }
 }
