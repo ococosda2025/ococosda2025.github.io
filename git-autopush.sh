@@ -1,12 +1,14 @@
 #!/bin/bash
-# Script: git-autopush.sh
 
-# Tambahkan semua perubahan
+# Add semua perubahan
 git add .
 
-# Buat pesan commit dengan timestamp (hari, tanggal, waktu)
-TIMESTAMP=$(date "+%A, %d %B %Y, %H:%M")
-git commit -m "Update otomatis - $TIMESTAMP"
+# Commit dengan pesan otomatis
+git commit -m "Update otomatis - $(date '+%A, %d %B %Y, %H:%M')"
 
-# Push ke origin master
+# Tarik dulu perubahan dari remote
+git pull --rebase origin master
+
+# Push ke remote
 git push origin master
+
