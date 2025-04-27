@@ -2,15 +2,26 @@ html {
   scroll-behavior: smooth;
 }
 
-/* General body styles */
-
+body {
+  background-color: #ffffff;
+  color: #222222;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14pt;
+  line-height: 1.7em;
+  margin: 60px auto 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 5vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
 
 p {
-    text-align: justify;
-    margin-top: 10px;
-    margin-bottom: 20px;
-
   text-align: justify;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 /* Conference Title Logo */
@@ -74,14 +85,6 @@ p {
     position: relative;
     font-family: 'Roboto Slab', serif;
 }
-
-
-
-
-
-
-
-
 
 /* Slideshow Styling */
 .banner-slideshow {
@@ -309,12 +312,6 @@ p {
 
 .conf-title, 
 
-
-
-
-
-.conf-title, 
-
 footer {
   padding-left: 20px;
   padding-right: 20px;
@@ -329,10 +326,6 @@ footer {
   font-family: Arial, sans-serif;
   box-sizing: border-box;
 }
-
-
-
-
 
 .caption {
     position: absolute;
@@ -366,21 +359,6 @@ footer {
     background: none; /* hapus latar belakang gelap */
 }
 
-
-}
-
-
-}
-
-
-}
-
-
-}
-
-
-}
-
 @media (min-width: 1024px) {
   body,
   .conf-title,
@@ -394,8 +372,6 @@ footer {
     padding-left: 0;
     padding-right: 0;
   }
-
-  
 
   .logo-title-wrapper .logo-image {
     height: 60px;
@@ -480,11 +456,6 @@ body {
 .organizer-group .organizer {
   flex: 1 1 300px;
 }
-
-
-/* Stylish horizontal line for section headings */
-
-
 
 /* Stylish horizontal line for section headings */
 .section-divider {
