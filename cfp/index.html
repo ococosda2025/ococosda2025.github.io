@@ -37,29 +37,27 @@
 <!-- Navigation Bar using Flexbox -->
 
 <div class="navigation">
-<a href="index2.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Home">Home</a>
-<a href="organizers/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Organizers">Organizers</a>
-<!--
-<div class="dropdown">
-<a class="dropbtn" href="index2.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Conference Home Page">Home ▾</a>
-<div class="dropdown-content">
-<a href="index2.html#organizers" style="font-size:18px; font-weight:500; margin-right:15px;">Organizers</a>
-</div>
-</div>
--->
-<a href="cfp/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Call for Papers">Call for Papers</a>
-<a href="previous.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Previous Conferences">Previous Conferences</a>
-<a href="program/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Conference Program">Program</a>
-<a href="speakers/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Speakers">Speakers</a>
-<a href="registration/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Register for the Conference">Registration</a>
-<a href="venue/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Venue">Venue</a>
-<div class="dropdown">
-<a class="dropbtn" href="travel/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Travel">Travel ▾</a>
-<div class="dropdown-content">
-<a href="travel/index.html#visa-info" style="font-size:18px; font-weight:500; margin-right:15px;">Visa</a>
-</div>
-</div>
-<a href="mailto:ococosda2025@gmail.com" style="font-size:18px; font-weight:500; margin-right:15px;" title="Contact">Contact</a>
+  <a class="menu-main" href="index2.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Home">Home</a>
+  <a class="menu-main" href="organizers/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Organizers">Organizers</a>
+  <a class="menu-main" href="cfp/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Call for Papers">Call for Papers</a>
+  <a class="menu-main" href="previous.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Previous Conferences">Previous Conferences</a>
+  <div class="dropdown">
+    <a class="menu-main dropbtn" href="program/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Program & Speakers">Program & Speakers ▾</a>
+    <div class="dropdown-content">
+      <a href="program/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Program">Program</a>
+      <a href="speakers/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Speakers">Speakers</a>
+    </div>
+  </div>
+  <a class="menu-main" href="registration/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Registration">Registration</a>
+  <div class="dropdown">
+    <a class="menu-main dropbtn" href="venue/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Venue & Travel">Venue & Travel ▾</a>
+    <div class="dropdown-content">
+      <a href="venue/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Venue">Venue</a>
+      <a href="travel/index.html" style="font-size:18px; font-weight:500; margin-right:15px;" title="Travel">Travel</a>
+      <a href="travel/index.html#visa-info" style="font-size:18px; font-weight:500; margin-right:15px;" title="Visa">Visa</a>
+    </div>
+  </div>
+  <a class="menu-main" href="mailto:ococosda2025@gmail.com"style="font-size:18px; font-weight:500; margin-right:15px;" title="Contact">Contact</a>
 </div>
 
 <div style="margin-top: 100px;"></div>
@@ -174,17 +172,25 @@ All deadlines are 11:59 pm UTC-12h (anywhere on earth)
   }, 3000);
 </script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll('.navigation > a, .navigation .dropbtn');
-    const currentPath = window.location.pathname.replace(/\/$/, '');
+document.addEventListener("DOMContentLoaded", function () {
+  const mainLinks = document.querySelectorAll('.navigation > a.menu-main, .navigation .dropbtn');
+  const currentPath = window.location.pathname;
 
-    links.forEach(link => {
-      const linkPath = new URL(link.href).pathname.replace(/\/$/, '');
-      if (linkPath === currentPath) {
-        link.classList.add('active');
-      }
-    });
+  mainLinks.forEach(link => {
+    const linkPath = new URL(link.href, document.baseURI).pathname;
+
+    if (link.textContent.includes("Program") && 
+        (currentPath.includes("/program") || currentPath.includes("/speakers"))) {
+      link.classList.add('active');
+    } else if (link.textContent.includes("Venue") && 
+        (currentPath.includes("/venue") || currentPath.includes("/travel"))) {
+      link.classList.add('active');
+    } else if (linkPath === currentPath) {
+      link.classList.add('active');
+    }
   });
+});
 </script>
+
 </p></p></p></p></body>
 </html>
