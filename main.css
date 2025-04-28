@@ -699,3 +699,68 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
   border: none;
 }
+
+.submit-paper-wrapper {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.submit-paper-button {
+  display: inline-block;
+  background-color: #b2132e;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-paper-button:hover {
+  background-color: #8f1024;
+  transform: scale(1.05);
+}
+
+/* Responsif di HP */
+@media (max-width: 600px) {
+  .submit-paper-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+
+.submit-paper-wrapper {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.submit-paper-button {
+  display: inline-block;
+  background-color: #b2132e;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-paper-button:hover {
+  background-color: #8f1024;
+  transform: scale(1.05);
+}
+
+/* Responsif di HP */
+@media (max-width: 600px) {
+  .submit-paper-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+
