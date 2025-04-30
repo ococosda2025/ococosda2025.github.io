@@ -1,16 +1,12 @@
-#echo "rm backup.zip"
-#rm backup.zip
-#echo "zip -r backup.zip *"
-#zip -r backup.zip *
-#echo ""
-#echo "cp -f backup.zip ~/Downloads"
-#cp -f backup.zip ~/Downloads
-TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
-ZIP_NAME="backup_Teduh_$TIMESTAMP.zip"
+#!/usr/bin/bash
+echo 'rm backup*.zip'
+rm backup*.zip
 
-echo "zip -r $ZIP_NAME *"
-zip -r "$ZIP_NAME" *
+TIMESTAMP=$(date +"%Y-%m-%d-%H-%M-%S")
+ZIP_FILENAME="backup-Teduh-$TIMESTAMP.zip"
 
-echo ""
-echo "cp -f $ZIP_NAME ~/Downloads"
-cp -f "$ZIP_NAME" ~/Downloads
+echo "zip -r \"$ZIP_FILENAME\" *"
+zip -r "$ZIP_FILENAME" *
+
+echo "cp -f \"$ZIP_FILENAME\" ~/Downloads"
+cp -f "$ZIP_FILENAME" ~/Downloads
