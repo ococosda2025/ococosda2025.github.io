@@ -77,92 +77,131 @@ table.center td, table.center th {
 </style>
 <div class='tentative' id="program">
     <div class="table_div_mid">
-        <table class="center" border="1"><thead>
-        <p style="text-align: center; font-size: 16px; font-style: italic; margin-bottom: 5px;">Note: All times are in UTC+7 (WIB - Indonesia Western Time)</p>
-			<tr>
-				<th> Time </th>
-                <th> Day 1: Nov. 12 (Wed.) </th>
-                <th> Day 2: Nov. 13 (Thu.) </th>
-                <th> Day 3: Nov. 14 (Fri.) </th>
-            </tr></thead>
-            <tbody>
-            <tr>
-                <td style="white-space: nowrap;"> <time>08:00</time> - <time>08:30</time> </td>
-                <td style="background-color:rgba(255, 99, 71, 0.5);"> Registration </td>
-                <td style="background-color:LightGray"></td>
-                <td style="background-color:LightGray"></td>
-            </tr>
-			<tr>
-                <td style="white-space: nowrap;"> <time>08:30</time> - <time>08:45</time> </td>
-                <td style="background-color:LightBlue"> Opening Ceremony </td>
-                <td style="background-color:LightGray"></td>
-                <td style="background-color:LightGray"></td>
-            </tr>
-			<tr>
-                <td style="white-space: nowrap;"> <time>08:45</time> - <time>09:00</time></td>
-                <td style="background-color:#FAD2AA"> Photo Session </td>
-                <td style="background-color:#FAD2AA"> Photo Session </td>
-                <td style="background-color:#FAD2AA"> Photo Session </td>
-            </tr>
-            <tr>
-                <td style="white-space: nowrap;"> <time>09:00</time> - <time>10:00</time></td>
-                <td style="white-space: nowrap;background-color:#D7EBBA"> Keynote Speech #1 <br> Prof. Dr. Suyanto, S.T., M.Sc. </td>
-                <td style="white-space: nowrap;background-color:#D7EBBA"> Keynote Speech #2 <br> Dr. Nancy F. Chen </td>
-                <td style="white-space: nowrap;background-color:#D7EBBA"> Keynote Speech #3 <br> TBA </td>
-            </tr>
-            <tr>
-                <td style="white-space: nowrap;"> <time>10:00</time> - <time>10:30</time></td>
-                <td style="background-color:#C5F0EB"> Coffee Break </td>
-                <td style="background-color:#C5F0EB"> Coffee Break </td>
-                <td style="background-color:#C5F0EB"> Coffee Break </td>
-            </tr>
-            <tr>
-                <td rowspan="3" style="white-space: nowrap;"> <time>10:30</time> - <time>12:00</time></td>
-				<td rowspan="3" style="background-color:#FCF4AB"> Oral session #1 <br> Topic Speech Science </td>
-				<td rowspan="3" style="background-color:#FCF4AB"> Oral session #4 <br> Topic Speech Science </td>
-                <td style="background-color:Lavender"> Country Report </td>
-            </tr>
-			<tr>
-				<td style="background-color:#FFDCEA"> Award Ceremony </td>
-			</tr>
-			<tr>
-				<td style="background-color:LightBlue"> Closing Ceremony </td>
-			</tr>
-            <tr>
-                <td> 12:00 - 13:00 </td>
-                <td style="background-color:#C5F0EB"> Lunch Break </td>
-                <td style="background-color:#C5F0EB"> Lunch Break </td>
-				<td style="background-color:#C5F0EB"> Lunch Break </td>
-            </tr>
-            <tr>
-                <td>13:00 - 14:30  </td>
-                <td style="background-color:#FCF4AB"> Oral Session #2 <br> Topic Technology </td>
-				<td style="background-color:#FCF4AB"> Oral Session #5 <br> Topic Technology </td>
-        <td rowspan="4" style="background-color:#EEC9BE"><br><br> City Tour of<br>Yogyakarta </td>
-            </tr>
-            <tr>
-                <td> 14:30 - 15:30 </td>
-				<td style="background-color:#FAB3A9"> Poster Session #1 <br> Topic Speech Science & Technology</td>
-				<td style="background-color:#FAB3A9"> Poster Session #2 <br> Topic Speech Science & Technology </td>
-            </tr>
-            <tr>
-                <td> 15:30 - 16:00 </td>
-                <td style="background-color:#C5F0EB"> Coffee Break </td>
-                <td style="background-color:#C5F0EB"> Coffee Break </td>
-            </tr>
-            <tr>
-                <td> 16:00 - 17:30 </td>
-                <td style="background-color:#FCF4AB"> Oral Session #3 <br> Topic Data Development </td>
-				<td style="background-color:#FCF4AB"> Oral Session #6 <br> Topic Speech Science </td>
-            </tr>
-            <tr>
-                <td> 18:30 - 20:30 </td>
-                <td style="background-color:LightGray"></td>
-				<td style="background-color:#F5E7BF"> Gala Dinner </td>
-				<td style="background-color:LightGray"></td>
-            </tr>
-			</tbody>
-		</table>
+        <table class="center" border="1"><colgroup>
+  <col class="time" />
+  <col class="activity" />
+  <col class="time" />
+  <col class="activity" />
+  <col class="time" />
+  <col class="activity" />
+</colgroup>
+
+  <thead>
+    <p style="text-align:center;font-size:16px;font-style:italic;margin-bottom:5px;">
+      Note: All times are in UTC+7 (WIB - Indonesia Western Time)
+    </p>
+    <tr>
+      <th colspan="2">Day 1: Nov. 12 (Wed.)</th>
+      <th colspan="2">Day 2: Nov. 13 (Thu.)</th>
+      <th colspan="2">Day 3: Nov. 14 (Fri.)</th>
+    </tr>
+    <tr>
+      <th>Time</th><th>Activity</th>
+      <th>Time</th><th>Activity</th>
+      <th>Time</th><th>Activity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Morning -->
+    <tr>
+      <td style="white-space:nowrap;">08:00 - 08:30</td>
+      <td style="background-color:rgba(255, 99, 71, 0.5);">Registration</td>
+      <td style="white-space:nowrap;">&nbsp;</td>
+      <td style="background-color:LightGray"></td>
+      <td style="white-space:nowrap;">&nbsp;</td>
+      <td style="background-color:LightGray"></td>
+    </tr>
+    <tr>
+      <td style="white-space:nowrap;">08:30 - 08:45</td>
+      <td style="background-color:LightBlue;">Opening Ceremony</td>
+      <td style="white-space:nowrap;">&nbsp;</td>
+      <td style="background-color:LightGray"></td>
+      <td style="white-space:nowrap;">08:30 - 09:30</td>
+      <td style="background-color:#FCF4AB;">Oral Session (Day 3, Session 1) <br><small>4 papers</small></td>
+    </tr>
+    <tr>
+      <td style="white-space:nowrap;">08:45 - 09:00</td>
+      <td style="background-color:#FAD2AA;">Photo Session</td>
+      <td style="white-space:nowrap;">08:45 - 09:00</td>
+      <td style="background-color:LightGray;"><!-- removed as requested --></td>
+      <td style="white-space:nowrap;">09:30 - 10:00</td>
+      <td style="background-color:#C5F0EB;">Coffee Break</td>
+    </tr>
+    <tr>
+      <td style="white-space:nowrap;">09:00 - 10:00</td>
+      <td style="white-space:nowrap;background-color:#D7EBBA;">Keynote Speech #1 <br> Prof. Dr. Suyanto, S.T., M.Sc.</td>
+      <td style="white-space:nowrap;">09:00 - 10:00</td>
+      <td style="white-space:nowrap;background-color:#D7EBBA;">Keynote Speech #2 <br> Dr. Nancy F. Chen</td>
+      <td style="white-space:nowrap;">10:00 - 11:00</td>
+      <td style="background-color:Lavender;">Country Report</td>
+    </tr>
+    <tr>
+      <td style="white-space:nowrap;">10:00 - 10:30</td>
+      <td style="background-color:#C5F0EB;">Coffee Break</td>
+      <td style="white-space:nowrap;">10:00 - 10:30</td>
+      <td style="background-color:#C5F0EB;">Coffee Break</td>
+      <td style="white-space:nowrap;">11:00 - 11:30</td>
+      <td style="background-color:#FFDCEA;">
+        Award Ceremony<br>
+        <span style="background-color:transparent;">Closing Ceremony</span><br>
+        <span style="background-color:#FAD2AA;">Photo Session</span>
+      </td>
+    </tr>
+    <!-- Late morning / midday -->
+    <tr>
+      <td style="white-space:nowrap;">10:30 - 12:00</td>
+      <td style="background-color:#FCF4AB;">Oral Session #1 <br> Topic Speech Science</td>
+      <td style="white-space:nowrap;">10:30 - 12:00</td>
+      <td style="background-color:#FCF4AB;">Oral Session #4 <br> Topic Speech Science</td>
+      <td style="white-space:nowrap;">11:30 - 12:30</td>
+      <td style="background-color:#C5F0EB;">Lunch</td>
+    </tr>
+    <tr>
+      <td style="white-space:nowrap;">12:00 - 13:00</td>
+      <td style="background-color:#C5F0EB;">Lunch</td>
+      <td style="white-space:nowrap;">12:00 - 13:00</td>
+      <td style="background-color:#C5F0EB;">Lunch</td>
+      <td style="white-space:nowrap;">12:30 - 17:30</td>
+      <td rowspan="5" style="background-color:#EEC9BE;">
+        <br>City Tour of Yogyakarta
+      </td>
+    </tr>
+    <!-- Afternoon -->
+    <tr>
+      <td style="white-space:nowrap;">13:00 - 14:30</td>
+      <td style="background-color:#FCF4AB;">Oral Session #2 <br> Topic Technology</td>
+      <td style="white-space:nowrap;">13:00 - 14:30</td>
+      <td style="background-color:#FCF4AB;">Oral Session #5 <br> Topic Technology</td>
+    </tr>
+    <tr>
+      <td style="white-space:nowrap;">14:30 - 15:30</td>
+      <td style="background-color:#FAB3A9;">Poster Session #1 <br> Speech Science &amp; Technology</td>
+      <td style="white-space:nowrap;">14:30 - 15:30</td>
+      <td style="background-color:#FAB3A9;">Poster Session #2 <br> Speech Science &amp; Technology</td>
+    </tr>
+    <tr>
+      <td style="white-space:nowrap;">15:30 - 16:00</td>
+      <td style="background-color:#C5F0EB;">Coffee Break</td>
+      <td style="white-space:nowrap;">15:30 - 16:00</td>
+      <td style="background-color:#C5F0EB;">Coffee Break</td>
+    </tr>
+    <tr>
+      <td style="white-space:nowrap;">16:00 - 17:30</td>
+      <td style="background-color:#FCF4AB;">Oral Session #3 <br> Topic Data Development</td>
+      <td style="white-space:nowrap;">16:00 - 17:30</td>
+      <td style="background-color:#FCF4AB;">Oral Session #6 <br> Topic Speech Science</td>
+    </tr>
+    <!-- Evening -->
+    <tr>
+      <td style="white-space:nowrap;">17:30 - 20:30</td>
+      <td style="background-color:LightGray;"></td>
+      <td style="white-space:nowrap;">17:30 - 20:30</td>
+      <td style="background-color:#F5E7BF;">Photo Session &amp; Gala Dinner</td>
+      <td style="white-space:nowrap;">&nbsp;</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 	</div>
 </div>
@@ -696,13 +735,13 @@ table.center td, table.center th {
   <h2 class="session-title">Oral Session #7</h2>
   <div class="session-meta">
     <span class="session-date">Friday, November 14, 2025 (Day 3)</span>
-    <span class="session-time">Time: 08:30 – 10:00</span>
+    <span class="session-time">Time: 08:30 – 09:30</span>
     <span class="session-chair">Session Chair: TBA</span>
   </div>
   <div class="talks">
     
         <div class="talk">
-          <div class="talk-time">08:30-08:52</div>
+          <div class="talk-time">08:30-08:45</div>
           <div class="talk-body">
             <div class="talk-title">Tonal coarticulation in Jotsoma Angami compounds vs non-compounds</div>
             <div class="talk-authors">Zhonei I Gwirie, Priyankoo Sarmah and Sanasam Ranbir Singh</div>
@@ -710,7 +749,7 @@ table.center td, table.center th {
           </div>
         </div>
         <div class="talk">
-          <div class="talk-time">08:52-09:15</div>
+          <div class="talk-time">08:45-09:00</div>
           <div class="talk-body">
             <div class="talk-title">Improving Multi-Speaker Transcription for Live News Broadcasts with Canary 1B and PYannote Diarization</div>
             <div class="talk-authors">Muhammad Rifqi Adli Gumay, Rahmat Bryan Naufal, Alvin Xavier Rakha Wardhana and Kurniawati Azizah</div>
@@ -718,7 +757,7 @@ table.center td, table.center th {
           </div>
         </div>
         <div class="talk">
-          <div class="talk-time">09:15-09:37</div>
+          <div class="talk-time">09:00-09:15</div>
           <div class="talk-body">
             <div class="talk-title">Neural Network-Based Speech Emotion Recognition for The Indonesian Language</div>
             <div class="talk-authors">Muhammad Iqbal Asrif, Muhammad Alif Ismady and Kurniawati Azizah</div>
@@ -726,7 +765,7 @@ table.center td, table.center th {
           </div>
         </div>
         <div class="talk">
-          <div class="talk-time">09:37-10:00</div>
+          <div class="talk-time">09:15-09:30</div>
           <div class="talk-body">
             <div class="talk-title">Multilingual Multi-task Learning with Gradient Manipulation Method for Local Languages in Indonesia</div>
             <div class="talk-authors">Wilbert Fangderson and Ayu Purwarianti</div>
